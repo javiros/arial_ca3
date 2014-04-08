@@ -94,3 +94,19 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
+
+/*
+ * Sidr navbar ideas
+ */
+.sidr_margin {
+    margin-top: 90px;
+}
+
+#mobile-header {
+    display: none;
+}
+@media only screen and (max-width: 767px){
+    #mobile-header {
+        display: block;
+    }
+}

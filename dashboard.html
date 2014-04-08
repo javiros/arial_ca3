@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,6 +24,9 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Include Sidr bundled CSS theme -->
+    <link rel="stylesheet" href="css/jquery.sidr.dark.css">
   </head>
 
   <body>
@@ -58,25 +60,53 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview</a></li>
-            <li><a href="#">Ruby on Rails</a></li>
-            <li><a href="#">PHP</a></li>
-            <li><a href="#">C#</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Node.js</a></li>
-            <li><a href="">Backbone</a></li>
-            <li><a href="">HTML5</a></li>
-            <li><a href="">CSS3</a></li>
-            <li><a href="">JQuery</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li>Completely Newbie?</li>
-            <li><a href="">HTML</a></li>
-            <li><a href="">CSS</a></li>
-            <li><a href="">JavaScript</a></li>
-          </ul>
+
+              <!-- navbar contained in sidr toggle menu-->
+              <a id="simple-menu" href="#sidr">Toggle menu</a>
+
+              <div id="sidr" class="sidr_margin">
+                  <ul>
+                    <li class="active"><a href="#">Overview</a></li>
+                    <li><a href="#">Ruby on Rails</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">C#</a></li>
+                  </ul>
+                  <ul class="nav nav-sidebar">
+                    <li><a href="">Node.js</a></li>
+                    <li><a href="">Backbone</a></li>
+                    <li><a href="">HTML5</a></li>
+                    <li><a href="">CSS3</a></li>
+                    <li><a href="">JQuery</a></li>
+                  </ul>
+                  <ul class="nav nav-sidebar">
+                    <li>Completely Newbie?</li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">JavaScript</a></li>
+                  </ul>
+              </div>
+           </ul>
         </div>
+
+        <!-- navbar contained in sidr toggle menu for mobile only-->
+        <div id="mobile-header">
+            <a id="responsive-menu-button" href="#">Menu</a>
+        </div>
+
+        <div id="navigation">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Get started</a></li>
+                    <li><a href="#">Ruby on Rails</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">C#</a></li>
+                    <li><a href="#">Node.js</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">Dashboard</h1>
 
@@ -241,5 +271,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/docs.min.js"></script>
+
+    <!-- Include the Sidr JS -->
+    <script src="js/jquery.sidr.min.js"></script>
+
+    <!-- script for sidr -->
+    <script src="js/sidr.js"></script>
   </body>
 </html>
