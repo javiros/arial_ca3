@@ -3,22 +3,23 @@ $(document).ready(function() {
 	var ctx = $("#myChart").get(0).getContext("2d");
 	//This will get the first returned node in the jQuery collection.
 	var myNewChart = new Chart(ctx);
-
-	
+	for (var i=0; i<video.numviews; i++)
+	{
 	var data = [
 	{
-		value: 30,
+		value: i,
 		color:"#F38630"
 	},
 	{
-		value : 50,
+		value : i,
 		color : "#E0E4CC"
 	},
 	{
-		value : 100,
+		value : i,
 		color : "#69D2E7"
 	}			
 ];
+};
 var options = {
     scaleFontColor: "#f00",
     datasetStrokeWidth: 20
