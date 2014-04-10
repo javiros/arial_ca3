@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e597da21-ee87-4a61-bffc-3f23f6a31d12" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/youtubeAPI.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/searchAPI.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/dashboard.css" afterPath="$PROJECT_DIR$/css/dashboard.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard.html" afterPath="$PROJECT_DIR$/dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/help.html" afterPath="$PROJECT_DIR$/help.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/youtubeAPI.js" afterPath="$PROJECT_DIR$/js/youtubeAPI.js" />
     </list>
     <ignored path="arial_ca3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,19 +71,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dashboard.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="dashboard.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="56" selection-start="5425" selection-end="5425" vertical-scroll-proportion="1.9609375" vertical-offset="755" max-vertical-offset="2145">
+            <state line="59" column="17" selection-start="2517" selection-end="2517" vertical-scroll-proportion="-17.5" vertical-offset="465" max-vertical-offset="2280">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="youtubeAPI.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/youtubeAPI.js">
+      <file leaf-file-name="searchAPI.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/searchAPI.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="3" selection-start="2990" selection-end="2990" vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="945">
+            <state line="14" column="29" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="help.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/help.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="463" selection-end="545" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="405">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/dashboard.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="142" column="23" selection-start="2060" selection-end="2060" vertical-scroll-proportion="0.31314623" vertical-offset="1918" max-vertical-offset="2670">
               <folding />
             </state>
           </provider>
@@ -102,11 +125,13 @@
         <option value="$PROJECT_DIR$/test/SpecRunner.html" />
         <option value="$PROJECT_DIR$/css/video.css" />
         <option value="$PROJECT_DIR$/js/sidr.js" />
-        <option value="$PROJECT_DIR$/css/dashboard.css" />
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/js/youtubeAPI.js" />
+        <option value="$PROJECT_DIR$/js/searchAPI.js" />
+        <option value="$PROJECT_DIR$/help.html" />
         <option value="$PROJECT_DIR$/dashboard.html" />
+        <option value="$PROJECT_DIR$/css/dashboard.css" />
       </list>
     </option>
   </component>
@@ -173,6 +198,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arial_ca3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arial_ca3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -409,12 +448,17 @@
       <created>1396943533874</created>
       <updated>1396943533874</updated>
       <workItem from="1397162643995" duration="182000" />
-      <workItem from="1397162892198" duration="461000" />
+      <workItem from="1397162892198" duration="2093000" />
     </task>
+    <task id="LOCAL-00001" summary="youTube Api">
+      <created>1397163397532</created>
+      <updated>1397163397532</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="643000" />
+    <option name="totallyTimeSpent" value="2275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="6" />
@@ -433,6 +477,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -459,6 +504,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="youTube Api" />
+    <option name="LAST_COMMIT_MESSAGE" value="youTube Api" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -533,19 +580,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/jquery.sidr.dark.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/sidr.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/dashboard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="15" selection-start="1620" selection-end="1620" vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="1875">
           <folding />
         </state>
       </provider>
@@ -580,14 +622,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/youtubeAPI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="3" selection-start="2990" selection-end="2990" vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="945">
+        <state line="5" column="52" selection-start="189" selection-end="189" vertical-scroll-proportion="0.11295181" vertical-offset="0" max-vertical-offset="975">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/searchAPI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="29" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/help.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="463" selection-end="545" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="405">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="56" selection-start="5425" selection-end="5425" vertical-scroll-proportion="1.9609375" vertical-offset="755" max-vertical-offset="2145">
+        <state line="59" column="17" selection-start="2517" selection-end="2517" vertical-scroll-proportion="-17.5" vertical-offset="465" max-vertical-offset="2280">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/dashboard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="23" selection-start="2060" selection-end="2060" vertical-scroll-proportion="0.31314623" vertical-offset="1918" max-vertical-offset="2670">
           <folding />
         </state>
       </provider>
