@@ -1,13 +1,13 @@
-angular.module('myApp', [
+angular.module('arial_ca3', [
         'ngRoute',
-        'myApp.controllers',
+        'arial_ca3.controllers',
         'UserApp'
     ]).
     config(['$routeProvider', function($routeProvider) {
         $routeProvider
             .when('/login', {templateUrl: 'login.html'})
             .when('/signup', {templateUrl: 'signup.html'})
-            .when('/home', {templateUrl: 'home.html', controller: 'HomeCtrl'})
+            .when('/dashboard', {templateUrl: 'dashboard.html', controller: 'dashboardCtrl'})
             .otherwise({redirectTo: '/home'});
     }])
     .run(function($rootScope,user) {
