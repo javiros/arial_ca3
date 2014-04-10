@@ -7,18 +7,24 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
-      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-      <script type="text/javascript" src="js/searchAPI.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/searchAPI.js"></script>
+    <script src="https://app.userapp.io/js/userapp.client.js"></script>
+    <script src="https://rawgithub.com/userapp-io/userapp-angular/master/angularjs.userapp.js"></script>
 
-    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
     <title>VideoCoder</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Css file -->
+    <link rel="stylesheet" type="text/css" href="../css/myCss.css">
 
     <!-- Custom styles for this template -->
-    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="../css/dashboard.css" rel="stylesheet">
 
+    
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -27,10 +33,10 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    
     <!-- Include Sidr bundled CSS theme -->
-    <link rel="stylesheet" href="css/jquery.sidr.dark.css">
-      <script src="js/angular.js"></script>
+    <link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+      <script src="../js/angular.js"></script>
   </head>
 
   <body>
@@ -121,6 +127,10 @@
           <h3 ng-show="active">You Chose <b>{{active}}</b></h3>
 
           <div class="table-responsive">
+            <div id="charts">
+              <!--charts go here -->
+              <canvas id="myChart" width="400" height="400">Canvas goes here</canvas>
+           </div>
             <div id="videos">
               <!-- vids go here -->
            </div>
@@ -134,13 +144,79 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 
     <!-- Include the Sidr JS -->
-    <script src="js/jquery.sidr.min.js"></script>
+    <script src="../js/jquery.sidr.min.js"></script>
 
     <!-- script for sidr -->
-    <script src="js/sidr.js"></script>
-	<script type="text/javascript" src="js/youtubeAPI.js"></script>
+    <script src="../js/sidr.js"></script>
+<<<<<<< HEAD
+	<script type="text/javascript">
+$(function(){
+  $('#usersnav ul li a').on('click', function(e){
+    e.preventDefault();
+    var htmlString  = '<ul id="videoslisting">';
+    var channelname = $(this).attr('href').substring(1);
+    var ytapiurl    = 'http://gdata.youtube.com/feeds/api/users/'+channelname+'/uploads?alt=json&max-results=10';
+  
+    $.getJSON(ytapiurl, function(data) {
+      $.each(data.feed.entry, function(i, item) {                                
+        var title    = item['title']['$t'];
+        var videoid  = item['id']['$t'];
+      
+        var pubdate  = item['published']['$t'];
+        var fulldate = new Date(pubdate).toLocaleDateString();
+      
+        var thumbimg = item['media$group']['media$thumbnail'][0]['url'];
+        var tinyimg1 = item['media$group']['media$thumbnail'][1]['url'];
+        var tinyimg2 = item['media$group']['media$thumbnail'][2]['url'];
+        var tinyimg3 = item['media$group']['media$thumbnail'][3]['url'];
+      
+        var vlink    = item['media$group']['media$content'][0]['url'];
+        var ytlink   = item['media$group']['media$player'][0]['url'];
+        var numviews = item['yt$statistics']['viewCount'];
+        var numcomms = item['gd$comments']['gd$feedLink']['countHint'];
+      
+        htmlString +='<li class="clearfix"><h2>' + title + '</h2>';
+        htmlString +='<div class="videothumb"><a href="' + ytlink + '" target="_blank"><img src="' + thumbimg + '" width="480" height="360"></a></div>';
+        htmlString +='<div class="meta"><p>Published on <strong>' + fulldate + '</strong></p><p>Total views: <strong>' + commafy(numviews) + '</strong></p><p>Total comments: <strong>'+ numcomms +'</strong></p><p><a href="'+ ytlink +'" class="external" target="_blank">View on YouTube</a></p><p><a href="'+ vlink +'" class="external" target="_blank">View in Fullscreen</a></p><p><strong>Alternate Thumbnails</strong>:<br><img src="'+ tinyimg1 +'"> <img src="' + tinyimg2 + '"> <img src="'+ tinyimg3 +'"></p></div></li>';
+      }); // end each loop
+    
+      $('#videos').html(htmlString + "</ul>");
+    }); // end json parsing
+  }); // end click event handler
+  
+  // commafy function source
+  // http://stackoverflow.com/a/6785438/477958
+  function commafy( arg ) {
+   arg += '';
+   var num = arg.split('.'); 
+   if (typeof num[0] !== 'undefined'){
+      var int = num[0];
+      if (int.length > 3){
+         int     = int.split('').reverse().join('');
+         int     = int.replace(/(\d{3})/g, "$1,");
+         int     = int.split('').reverse().join('')
+      }
+   }
+   if (typeof num[1] !== 'undefined'){
+      var dec = num[1];
+      if (dec.length > 4){
+         dec     = dec.replace(/(\d{3})/g, "$1 ");
+      }
+   }
+
+   return (typeof num[0] !== 'undefined'?int:'') 
+        + (typeof num[1] !== 'undefined'?'.'+dec:'');
+  }
+});
+</script>
+  <!-- Link for Chart.js -->
+<script type="text/javascript" src="../js/myCharts.js"></script>
+<script type="text/javascript" src="../js/Chart.js"></script>
+=======
+	<script type="text/javascript" src="../js/youtubeAPI.js"></script>
+>>>>>>> 45af6ffb34dc0814a8e3596333e13a50e08c81a6
   </body>
 </html>
