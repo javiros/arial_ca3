@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" type="text/css" media="all" href="dashboard.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/loaderjs.js"></script>
+    <script type="text/javascript" src="js/quvic.js"></script>
+    <script type="text/javascript" src="js/searchAPI.js"></script>
+</head>
+
+<body>
+<div style="width: 850px;">
+    <div id="playerContainer" style="width: 850px;">
+        <object id="player"></object>
+    </div>
+    <br>
+    <div id="videoSize">
+        <input type="button" id="Widescreen" value="Widescreen" onclick="javascript:HDPlayer()" disabled="true"></input>
+        <input type="button" id="Standard" value="Standard" onclick="javascript:HQPlayer()"></input>
+    </div><br>
+    <div id="searchForm">
+        <form id="searchForm" onsubmit="quvic.listVideos('search', this.searchTerm.value, 1); return false;">
+            <input name="searchTerm" type="text" value="" style="WIDTH: 280px;">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+    <br>
+    <div align="center">
+        <a href="#" onclick="quvic.listVideos('on_the_web','',1); return false;"><b>YouTube Trends</b></a> |
+        <a href="#" onclick="quvic.listVideos('recently_featured','',1); return false;"><b>Recently Featured</b></a> |
+        <a href="#" onclick="quvic.listVideos('top_rated','',1); return false;"><b>Top Rated</b></a> |
+        <a href="#" onclick="quvic.listVideos('top_favorites','',1); return false;"><b>Top Favorites</b></a> |
+        <a href="#" onclick="quvic.listVideos('most_popular','',1); return false;"><b>Most Popular</b></a> |
+        <a href="#" onclick="quvic.listVideos('most_responded','',1); return false;"><b>Most Responded</b></a>
+    </div>
+    <br><br>
+
+    <div id="searchResultsNavigation" align="right">
+        <LABEL id="videosinfo" align="right"></LABEL>
+        <form id="navigationForm">
+            <input type="button" id="previousPageButton" onclick="quvic.listVideos(quvic.previousQueryType, quvic.previousSearchTerm, quvic.previousPage);" value="<< prev" style="display: none;">
+
+            </input>
+            <input type="button" id="nextPageButton" onclick="quvic.listVideos(quvic.previousQueryType, quvic.previousSearchTerm, quvic.nextPage);" value="next >>" style="display: none;">
+            </input>
+        </form>
+    </div>
+
+
+    <div id="videolist">
+        <SCRIPT language=JavaScript type=text/javascript>
+            <!--
+
+
+            //-->
+        </SCRIPT>
+    </div>
+    <div class="clear"></div>
+    <br>
+
+    <br>
+
+    <a href="http://www.youtube.com" target="_blank">
+        <img src="images/youtube.gif" border="0" alt="Powered by Youtube"></a>
+    </center>
+
+</body>
+
+</html>
