@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e597da21-ee87-4a61-bffc-3f23f6a31d12" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/searchAPI.js" />
+    <list default="true" id="e597da21-ee87-4a61-bffc-3f23f6a31d12" name="Default" comment="instant search">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/loaderjs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/quvic.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/help.html" afterPath="$PROJECT_DIR$/advancedSearch.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/dashboard.css" afterPath="$PROJECT_DIR$/css/dashboard.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard.html" afterPath="$PROJECT_DIR$/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/help.html" afterPath="$PROJECT_DIR$/help.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/searchAPI.js" afterPath="$PROJECT_DIR$/js/searchAPI.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/youtubeAPI.js" afterPath="$PROJECT_DIR$/js/youtubeAPI.js" />
     </list>
     <ignored path="arial_ca3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,46 +70,7 @@
     <favorites_list name="arial_ca3" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="dashboard.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dashboard.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="17" selection-start="2517" selection-end="2517" vertical-scroll-proportion="-17.5" vertical-offset="465" max-vertical-offset="2280">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="searchAPI.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/searchAPI.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="29" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="help.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/help.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="463" selection-end="545" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="405">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/dashboard.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="23" selection-start="2060" selection-end="2060" vertical-scroll-proportion="0.31314623" vertical-offset="1918" max-vertical-offset="2670">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -128,8 +89,11 @@
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/js/youtubeAPI.js" />
-        <option value="$PROJECT_DIR$/js/searchAPI.js" />
         <option value="$PROJECT_DIR$/help.html" />
+        <option value="$PROJECT_DIR$/js/quvic.js" />
+        <option value="$PROJECT_DIR$/js/loaderjs.js" />
+        <option value="$PROJECT_DIR$/advancedSearch.html" />
+        <option value="$PROJECT_DIR$/js/searchAPI.js" />
         <option value="$PROJECT_DIR$/dashboard.html" />
         <option value="$PROJECT_DIR$/css/dashboard.css" />
       </list>
@@ -175,44 +139,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="arial_ca3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arial_ca3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arial_ca3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arial_ca3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arial_ca3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arial_ca3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arial_ca3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -448,21 +374,25 @@
       <created>1396943533874</created>
       <updated>1396943533874</updated>
       <workItem from="1397162643995" duration="182000" />
-      <workItem from="1397162892198" duration="2093000" />
+      <workItem from="1397162892198" duration="4954000" />
     </task>
     <task id="LOCAL-00001" summary="youTube Api">
       <created>1397163397532</created>
       <updated>1397163397532</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="instant search">
+      <created>1397165186769</created>
+      <updated>1397165186769</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2275000" />
+    <option name="totallyTimeSpent" value="5136000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -483,7 +413,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -505,7 +435,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="youTube Api" />
-    <option name="LAST_COMMIT_MESSAGE" value="youTube Api" />
+    <MESSAGE value="instant search" />
+    <option name="LAST_COMMIT_MESSAGE" value="instant search" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -585,13 +516,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/sidr.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/arial_ca3.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="677">
@@ -620,41 +544,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/sidr.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.088626295" vertical-offset="0" max-vertical-offset="677">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Song.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="2" selection-start="149" selection-end="149" vertical-scroll-proportion="0.13293944" vertical-offset="0" max-vertical-offset="677">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advancedSearch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="55" selection-start="485" selection-end="485" vertical-scroll-proportion="0.19543974" vertical-offset="0" max-vertical-offset="1125">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#form#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loaderjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="334" column="1" selection-start="10405" selection-end="10405" vertical-scroll-proportion="0.0" vertical-offset="1708" max-vertical-offset="5100">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1397166081000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1397166081000" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/quvic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5070">
+          <folding>
+            <marker date="1397166006000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1397166006000" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/youtubeAPI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="52" selection-start="189" selection-end="189" vertical-scroll-proportion="0.11295181" vertical-offset="0" max-vertical-offset="975">
+        <state line="1" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.022590362" vertical-offset="0" max-vertical-offset="975">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/searchAPI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="29" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/help.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="463" selection-end="545" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="17" selection-start="2517" selection-end="2517" vertical-scroll-proportion="-17.5" vertical-offset="465" max-vertical-offset="2280">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/dashboard.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="23" selection-start="2060" selection-end="2060" vertical-scroll-proportion="0.31314623" vertical-offset="1918" max-vertical-offset="2670">
+        <state line="120" column="24" selection-start="1734" selection-end="1734" vertical-scroll-proportion="0.35745937" vertical-offset="1558" max-vertical-offset="2670">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/searchAPI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="12" selection-start="1660" selection-end="1660" vertical-scroll-proportion="1.3554217" vertical-offset="0" max-vertical-offset="1065">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="55" selection-start="2499" selection-end="2499" vertical-scroll-proportion="0.6328125" vertical-offset="465" max-vertical-offset="2280">
           <folding />
         </state>
       </provider>
