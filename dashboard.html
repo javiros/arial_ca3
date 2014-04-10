@@ -27,10 +27,12 @@
 
     <!-- Include Sidr bundled CSS theme -->
     <link rel="stylesheet" href="css/jquery.sidr.dark.css">
+      <script src="js/angular.js"></script>
   </head>
 
   <body>
 
+  <div id=main ng-app>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -63,29 +65,28 @@
 
               <!-- navbar contained in sidr toggle menu-->
               <a id="simple-menu" href="#sidr">Toggle menu</a>
-
               <div id="sidr" class="sidr_margin">
                   
                <nav id="usersnav">
-      <ul>
-        <li><a href="#thenewboston">Ruby</a></li>
-        <li><a href="#derekbanas">Android</a></li>
-        <li><a href="#Make">Pure Geek</a></li>
-        <li><a href="#wearechange">wearechange</a></li>
-        <li><a href="#RTAmerica">RTAmerica</a></li>
-        <li><a href="#G4ZDTechTV2">G4ZDTechTV2</a></li>
-        <li><a href="#NovaCrystallisDotCom">NovaCrystallisDotCom</a></li>
-      </ul>
-	  
-	  
-	   <ul class="nav nav-sidebar">
+
+                  <ul class="{{active}}" ng-click="$event.preventDefault()">
+                    <li><a href="#thenewboston" ng-click="active='Ruby'" class="ruby">Ruby</a></li>
+                    <li><a href="#derekbanas" ng-click="active='Android'" class="android">Android</a></li>
+                    <li><a href="#Make" ng-click="active='Pure Geek'" class="pure_geek">Pure Geek</a></li>
+                    <li><a href="#wearechange" ng-click="active='Wearechange'" class="wearechange">wearechange</a></li>
+                    <li><a href="#RTAmerica" ng-click="active='RTAmerica'" class="RTAmerica">RTAmerica</a></li>
+                    <li><a href="#G4ZDTechTV2" ng-click="active='G4ZDTechTV2'" class="G4ZDTechTV2">G4ZDTechTV2</a></li>
+                    <li><a href="#NovaCrystallisDotCom" ng-click="active='NovaCrystallisDotCom'" class="NovaCrystallisDotCom">NovaCrystallisDotCom</a></li>
+                  </ul>
+
+	              <ul class="nav nav-sidebar">
                     <li>Completely Newbie?</li>
-                    <li><a href="#edzjohnson">HTML</a></li>
-                    <li><a href="">CSS</a></li>
-                    <li><a href="">JavaScript</a></li>
+                    <li><a href="#edzjohnson" ng-click="active='HTML'" class="HTML">HTML</a></li>
+                    <li><a href="#" ng-click="active='CSS'" class="CSS">CSS</a></li>
+                    <li><a href="#" ng-click="active='JavaScript'" class="JavaScript">JavaScript</a></li>
                   </ul>
 	  
-    </nav>
+                </nav>
                  
               </div>
            </ul>
@@ -107,6 +108,9 @@
           </div>
 
           <h2 class="sub-header">Section title</h2>
+          <h3 ng-hide="active">Please click a menu item</h3>
+          <h3 ng-show="active">You Chose <b>{{active}}</b></h3>
+
           <div class="table-responsive">
             <div id="videos">
               <!-- vids go here -->
@@ -115,6 +119,7 @@
         </div>
       </div>
     </div>
+  </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
