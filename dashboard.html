@@ -7,7 +7,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
-     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+      <script type="text/javascript" src="js/searchAPI.js"></script>
+
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <title>VideoCoder</title>
 
     <!-- Bootstrap core CSS -->
@@ -54,9 +57,10 @@
             <li><a href="#">Settings</a></li>
             <li><a href="#">Profile</a></li>
             <li><a href="#">Help</a></li>
+
           </ul>
           <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
+              <input type="text" class='search_input'/>
           </form>
         </div>
       </div>
@@ -102,10 +106,15 @@
             <a id="responsive-menu-button" href="#">Menu</a>
         </div>
 
-       
 
 
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+
+          <div id="result"></div>
+
+
+
+          <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">Dashboard</h1>
 
           
@@ -140,6 +149,7 @@
 
     <!-- script for sidr -->
     <script src="js/sidr.js"></script>
+<<<<<<< HEAD
 	<script type="text/javascript">
 $(function(){
   $('#usersnav ul li a').on('click', function(e){
@@ -203,5 +213,8 @@ $(function(){
   <!-- Link for Chart.js -->
 <script type="text/javascript" src="js/myCharts.js"></script>
 <script type="text/javascript" src="js/Chart.js"></script>   
+=======
+	<script type="text/javascript" src="js/youtubeAPI.js"></script>
+>>>>>>> 45af6ffb34dc0814a8e3596333e13a50e08c81a6
   </body>
 </html>
