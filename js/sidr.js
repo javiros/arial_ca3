@@ -9,7 +9,7 @@ $('#responsive-menu-button').sidr({
     source: '#navigation'
 });
 
- // the touchwipe function for devices
+ /*// the touchwipe function for devices
 $(window).touchwipe({
     wipeLeft: function() {
 // Close
@@ -20,4 +20,4 @@ $(window).touchwipe({
         $.sidr('open', 'sidr-main');
     },
     preventDefaultEvents: false
-});
+});*/

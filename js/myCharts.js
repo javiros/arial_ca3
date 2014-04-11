@@ -1,3 +1,4 @@
+/*
 $(document).ready(function() {
 	//Get context with jQuery - using jQuery's .get() method.
 	var ctx = $("#myChart").get(0).getContext("2d");
@@ -19,11 +20,11 @@ $(document).ready(function() {
 		color : "#69D2E7"
 	}			
 ];
-};
+}
 var options = {
     scaleFontColor: "#f00",
     datasetStrokeWidth: 20
 };
 
 new Chart(ctx).Pie(data,options);
-});
+});*/

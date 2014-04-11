@@ -16,15 +16,17 @@
     <title>VideoCoder</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 
     <!-- Custom Css file -->
     <link rel="stylesheet" type="text/css" href="../css/myCss.css">
 
     <!-- Custom styles for this template -->
-    <link href="../css/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
 
-    
+    <!-- Include Sidr bundled CSS theme -->
+    <link rel="stylesheet" type="text/css" href="../css/jquery.sidr.dark.css">
+
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -33,10 +35,10 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
-    <!-- Include Sidr bundled CSS theme -->
-    <link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+
+    <!-- Include Angular js -->
       <script src="../js/angular.js"></script>
+
   </head>
 
   <body>
@@ -76,7 +78,7 @@
               <!-- navbar contained in sidr toggle menu-->
               <a id="simple-menu" href="#sidr">Toggle menu</a>
               <div id="sidr" class="sidr_margin">
-                  
+
                <nav id="usersnav">
 
                   <ul class="{{active}}" ng-click="$event.preventDefault()">
@@ -95,9 +97,9 @@
                     <li><a href="#" ng-click="active='CSS'" class="CSS">CSS</a></li>
                     <li><a href="#" ng-click="active='JavaScript'" class="JavaScript">JavaScript</a></li>
                   </ul>
-	  
+
                 </nav>
-                 
+
               </div>
            </ul>
         </div>
@@ -112,7 +114,7 @@
           <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">Dashboard</h1>
 
-          
+
           </div>
 
           <h2 class="sub-header">Section title</h2>
@@ -120,14 +122,18 @@
           <h3 ng-show="active">You are watching <b>{{active}}</b>!</h3>
 
           <div class="table-responsive">
-            <div id="charts">
-              <!--charts go here -->
-              <canvas id="myChart" width="400" height="400">Canvas goes here</canvas>
-           </div>
+
+           <!--charts go here
+                <div id="charts">
+                  <canvas id="myChart" width="400" height="400">Canvas goes here</canvas>
+               </div>
+               -->
+
             <div id="videos">
               <!-- vids go here -->
            </div>
-          </div>
+
+
         </div>
       </div>
     </div>
@@ -141,15 +147,15 @@
 
     <!-- Include the Sidr JS -->
     <script src="../js/jquery.sidr.min.js"></script>
-
     <!-- script for sidr -->
     <script src="../js/sidr.js"></script>
 
-  <!-- Link for Chart.js -->
-<script type="text/javascript" src="../js/myCharts.js"></script>
-<script type="text/javascript" src="../js/Chart.js"></script>
 
-    <script src="../js/sidr.js"></script>
+    <!-- Link for Chart.js -->
+    <script type="text/javascript" src="../js/myCharts.js"></script>
+    <script type="text/javascript" src="../js/Chart.js"></script>
+
+
 
 	<script type="text/javascript">
     $(function(){
@@ -211,12 +217,11 @@
       }
     });
 </script>
-  <!-- Link for Chart.js -->
+  <!-- Link for Chart.js
 <script type="text/javascript" src="../js/myCharts.js"></script>
 <script type="text/javascript" src="../js/Chart.js"></script>
+    -->
 
-  <!-- Link for youtubeAPI -->
-	<script type="text/javascript" src="../js/youtubeAPI.js"></script>
 
   </body>
 </html>
