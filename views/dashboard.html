@@ -51,7 +51,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">$("VideoCoder")<small> Watch & Learn!</small></a>
-        </div>
+        </div>  <!-- close of navbar-header -->
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Dashboard</a></li>
@@ -63,9 +63,9 @@
           <form class="navbar-form navbar-right">
               <input type="text" class='search_input'/>
           </form>
-        </div>
-      </div>
-    </div>
+        </div>  <!-- close of navbar-collapse collapse -->
+      </div>   <!-- close of container-fluid -->
+    </div> <!-- close of navbar navbar-inverse navbar-fixed-top -->
 
     <div class="container-fluid">
       <div class="row">
@@ -80,19 +80,19 @@
 
                   <ul class="nav" class="{{active}}" ng-click="$event.preventDefault()">
                     <li><a href="#thenewboston" ng-click="active='Ruby'" class="ruby">Ruby</a></li>
-                    <li><a href="#derekbanas" ng-click="active='Android'" class="android">Android</a></li>
-                    <li><a href="#Make" ng-click="active='Pure Geek'" class="pure_geek">Pure Geek</a></li>
+                    <li><a href="#mybringback" ng-click="active='Android'" class="android">Android</a></li>
+                    <li><a href="#funnyplox" ng-click="active='Pure Geek'" class="pure_geek">Pure Geek</a></li>
                     <li><a href="#wearechange" ng-click="active='Wearechange'" class="wearechange">wearechange</a></li>
-                    <li><a href="#RTAmerica" ng-click="active='RTAmerica'" class="RTAmerica">RTAmerica</a></li>
-                    <li><a href="#G4ZDTechTV2" ng-click="active='G4ZDTechTV2'" class="G4ZDTechTV2">G4ZDTechTV2</a></li>
-                    <li><a href="#NovaCrystallisDotCom" ng-click="active='NovaCrystallisDotCom'" class="NovaCrystallisDotCom">NovaCrystallisDotCom</a></li>
+                    <li><a href="#TEDxTalks" ng-click="active='TEDxTalks'" class="TEDxTalks">TEDxTalks</a></li>
+                    <li><a href="#iLessonsOnline" ng-click="active='.NET'" class="G4ZDTechTV2">.NET</a></li>
+                    <li><a href="#NovaCrystallisDotCom" ng-click="active='NovaCrystallisDotCom'" class="NovaCrystallisDotCom">Lets go Crazy</a></li>
                   </ul>
 
 	              <ul class="nav">
                     <li>&nbsp;&nbsp;Completely Newbie?</li>
                     <li><a href="#edzjohnson" ng-click="active='HTML'" class="HTML">HTML</a></li>
-                    <li><a href="#" ng-click="active='CSS'" class="CSS">CSS</a></li>
-                    <li><a href="#" ng-click="active='JavaScript'" class="JavaScript">JavaScript</a></li>
+                    <li><a href="#tutor4u" ng-click="active='CSS'" class="CSS">CSS</a></li>
+                    <li><a href="#ScoobyDooobyD00" ng-click="active='JavaScript'" class="JavaScript">JavaScript</a></li>
                   </ul>
 
                 </nav> <!-- close of usersnav -->
@@ -108,7 +108,32 @@
 
                       <h1 class="page-header">Dashboard</h1>
                       <!--<h2 class="sub-header">Section title</h2>-->
-                      <h3 ng-hide="active">Please click a menu item</h3>
+
+                  <div ng-hide="active">
+                         <h4>We all know You Tube is just too hard to use</h4>
+                         <h5>that Google has ruined it..</h5>
+                         <h3 class="top70">Please click a menu item</h3>
+                            <p></p>
+                         <h3>Learn all your codes here!</h3>
+                            <p></p>
+                         <h3 class="top70">...we are stealing your money now!</h3>
+                            <p></p>
+
+
+                        <div class="imgPlaceholder col-md-8"> image here </div>
+
+
+                        <p class="top70 col-md-4" ng-hide="active">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat
+                            vitae nibh ac congue. Cras in augue sed nulla faucibus scelerisque id vitae erat. Sed dignissim urna
+                            eget commodo lobortis. Morbi sodales tincidunt massa. Etiam pretium, urna egestas iaculis tincidunt,
+                            urna nulla dignissim tortor.</p>
+                         <p class="top70 col-md-4" ng-hide="active">
+                            Sed id blandit neque, luctus interdum est. Vestibulum a purus lacinia nisl vehicula blandit.
+                             Donec pharetra posuere diam vel feugiat. Sed sagittis convallis nulla eget mollis.
+                             Suspendisse posuere orci non arcu viverra, in aliquet purus auctor.
+                             onec porttitor nunc arcu, eget tempor quam viverra laoreet. Sed id blandit diam.</p>
+                  </div> <!-- close of ng-hide="active" -->
+
                       <h3 ng-show="active">You are watching <b>{{active}}</b>!</h3>
 
                       <div class="table-responsive">
@@ -123,20 +148,23 @@
                                   <!-- vids go here -->
                                 </div>
 
+                              <!-- chart testing
                               <div id="chartcontainer" style="height: 300px; width:300px">
-                              </div>  <!-- close of chartcontainer-->
+                              </div>  --> <!-- close of chartcontainer-->
 
-                        </div>  <!-- close of table-responsive -->
+                      </div>  <!-- close of table-responsive -->
               </div>  <!-- close of col-md-9 main -->
 
                <div class="col-md-2 main">
-                    <!-- this is the search result -->
+                    <!-- this is the video search result -->
                     <div id="result"></div>
                </div>  <!-- close of col-md-2 main -->
 
 
         </div> <!-- close of row -->
-      </div>
+      </div> <!-- close of container-fluid -->
+  </div> <!-- close of main-->
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

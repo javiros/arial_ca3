@@ -193,3 +193,19 @@ body {
 height: 300px;
 width:300px;
 }
+
+.top70 {
+    margin-top: 50px;
+}
+
+.imgPlaceholder {
+
+    height: 250px;
+    border:2px solid;
+    border-radius:15px;
+    border-color: #cf5423;
+    background-color: #dbdbdb;
+    margin:10px 5px;
+    float: left;
+
+}
