@@ -144,7 +144,7 @@ body {
     margin-left: 0px;
     min-height:100%;
     width:100%;
-    border:solid 10px #ffffff;
+    /*border:solid 10px #ffffff;*/
 
     -moz-border-radius:9px;
     -webkit-border-radius:9px;

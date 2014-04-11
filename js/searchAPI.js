@@ -22,7 +22,7 @@ $(document).ready(function()
                         var video_id=data.id;
                         var video_title=data.title;
                         var video_viewCount=data.viewCount;
-                        var video_frame="<iframe width='100%' height='300px' src='http://www.youtube.com/embed/"+video_id+"' frameborder='0' type='text/html'></iframe>";
+                        var video_frame="<iframe width='100%' height='240px' src='http://www.youtube.com/embed/"+video_id+"' frameborder='0' type='text/html'></iframe>";
                         var final="<div id='title'>"+video_title+"</div><div>"+video_frame+"</div><div id='count'>"+video_viewCount+" Views</div>";
                         $("#result").html(final);
                     });
