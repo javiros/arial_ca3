@@ -11,33 +11,30 @@
     <script type="text/javascript" src="../js/searchAPI.js"></script>
     <script src="https://app.userapp.io/js/userapp.client.js"></script>
     <script src="https://rawgithub.com/userapp-io/userapp-angular/master/angularjs.userapp.js"></script>
-
     <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../js/source/canvasjs.js"></script>
+    <script type="text/javascript" src="../js/canvas.js"></script>
+    <script type="text/javascript" src="../js/angular.js"></script>
     <title>VideoCoder</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-
+    <!--<link rel="stylesheet" type="text/css" href="../css/bootswatch/bootswatch-yeti.css"> -->
+   <link rel="stylesheet" type="text/css" href="../css/bootswatch/bootswatch-superhero.css">
+    <!--<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"> -->
     <!-- Custom Css file -->
     <link rel="stylesheet" type="text/css" href="../css/myCss.css">
-
     <!-- Custom styles for this template -->
     <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
-
     <!-- Include Sidr bundled CSS theme -->
     <link rel="stylesheet" type="text/css" href="../css/jquery.sidr.dark.css">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <!-- Include Angular js -->
-      <script src="../js/angular.js"></script>
 
   </head>
 
@@ -72,16 +69,16 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
+        <div class="col-md-1 sidebar">
+
           <ul class="nav nav-sidebar">
-
-              <!-- navbar contained in sidr toggle menu-->
+              <!-- navbar contained in sidr toggle menu
               <a id="simple-menu" href="#sidr">Toggle menu</a>
-              <div id="sidr" class="sidr_margin">
+              <div id="sidr" class="sidr_margin"> -->
 
-               <nav id="usersnav">
+              <nav id="usersnav">
 
-                  <ul class="{{active}}" ng-click="$event.preventDefault()">
+                  <ul class="nav" class="{{active}}" ng-click="$event.preventDefault()">
                     <li><a href="#thenewboston" ng-click="active='Ruby'" class="ruby">Ruby</a></li>
                     <li><a href="#derekbanas" ng-click="active='Android'" class="android">Android</a></li>
                     <li><a href="#Make" ng-click="active='Pure Geek'" class="pure_geek">Pure Geek</a></li>
@@ -91,53 +88,55 @@
                     <li><a href="#NovaCrystallisDotCom" ng-click="active='NovaCrystallisDotCom'" class="NovaCrystallisDotCom">NovaCrystallisDotCom</a></li>
                   </ul>
 
-	              <ul class="nav nav-sidebar">
-                    <li>Completely Newbie?</li>
+	              <ul class="nav">
+                    <li>&nbsp;&nbsp;Completely Newbie?</li>
                     <li><a href="#edzjohnson" ng-click="active='HTML'" class="HTML">HTML</a></li>
                     <li><a href="#" ng-click="active='CSS'" class="CSS">CSS</a></li>
                     <li><a href="#" ng-click="active='JavaScript'" class="JavaScript">JavaScript</a></li>
                   </ul>
 
-                </nav>
-
-              </div>
-           </ul>
-        </div>
+                </nav> <!-- close of usersnav -->
+           </ul> <!-- close of nav nav-sidebar -->
+        </div> <!-- close of col-md-1 sidebar -->
 
         <!-- navbar contained in sidr toggle menu for mobile only-->
-        <div id="mobile-header">
+        <!--<div id="mobile-header">
             <a id="responsive-menu-button" href="#">Menu</a>
-        </div>
+        </div>    -->
 
-          <div id="result"></div>
+              <div class="col-md-9 main">
 
-          <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Dashboard</h1>
+                      <h1 class="page-header">Dashboard</h1>
+                      <!--<h2 class="sub-header">Section title</h2>-->
+                      <h3 ng-hide="active">Please click a menu item</h3>
+                      <h3 ng-show="active">You are watching <b>{{active}}</b>!</h3>
+
+                      <div class="table-responsive">
+
+                           <!--charts go here
+                                <div id="charts">
+                                  <canvas id="myChart" width="400" height="400">Canvas goes here</canvas>
+                               </div>
+                               -->
+
+                                <div id="videos">
+                                  <!-- vids go here -->
+                                </div>
+
+                              <div id="chartcontainer" style="height: 300px; width:300px">
+                              </div>  <!-- close of chartcontainer-->
+
+                        </div>  <!-- close of table-responsive -->
+              </div>  <!-- close of col-md-9 main -->
+
+               <div class="col-md-2 main">
+                    <!-- this is the search result -->
+                    <div id="result"></div>
+               </div>  <!-- close of col-md-2 main -->
 
 
-          </div>
-
-          <h2 class="sub-header">Section title</h2>
-          <h3 ng-hide="active">Please click a menu item</h3>
-          <h3 ng-show="active">You are watching <b>{{active}}</b>!</h3>
-
-          <div class="table-responsive">
-
-           <!--charts go here
-                <div id="charts">
-                  <canvas id="myChart" width="400" height="400">Canvas goes here</canvas>
-               </div>
-               -->
-
-            <div id="videos">
-              <!-- vids go here -->
-           </div>
-
-
-        </div>
+        </div> <!-- close of row -->
       </div>
-    </div>
-  </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -215,13 +214,38 @@
        return (typeof num[0] !== 'undefined'?int:'')
             + (typeof num[1] !== 'undefined'?'.'+dec:'');
       }
+
+
+   //below is for testing insertion of youtubeAPI to chart. appears at bottom of all vids
+      function charted() {
+
+            var chart = new CanvasJS.Chart("chartcontainer", {
+                title:{
+                    text: "test chart JSON youtube"
+                },
+                data: [
+                    {type: "column",
+                        dataPoints: [
+                            { label: "views", y: ['published']['$t']},
+                            { label: "comments", y: ['gd$comments'] }
+
+                        ]
+                    }
+                ]
+            });
+
+            chart.render();
+        }
+        charted();
+
     });
+
 </script>
+
   <!-- Link for Chart.js
 <script type="text/javascript" src="../js/myCharts.js"></script>
 <script type="text/javascript" src="../js/Chart.js"></script>
     -->
-
 
   </body>
 </html>
