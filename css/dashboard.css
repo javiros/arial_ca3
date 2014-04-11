@@ -141,10 +141,10 @@ body {
 {
     background-color: #bababa;
     margin-top:25px;
-    margin-left: -300px;
-    min-height:400px;
-    width:450px;
-    border:solid 10px #ffffff;
+    margin-left: 0px;
+    min-height:100%;
+    width:100%;
+    /*border:solid 10px #ffffff;*/
 
     -moz-border-radius:9px;
     -webkit-border-radius:9px;
