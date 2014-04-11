@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3292d02d-35d4-4a90-be25-a535b7e1f08d" name="Default" comment="testing chartjs graph">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard.html" afterPath="$PROJECT_DIR$/views/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/myCharts.js" afterPath="$PROJECT_DIR$/js/myCharts.js" />
+    <list default="true" id="3292d02d-35d4-4a90-be25-a535b7e1f08d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="arial_ca3.iws" />
@@ -354,6 +351,11 @@
       <created>1397169458839</created>
       <updated>1397169458839</updated>
     </task>
+    <task id="LOCAL-00001" summary="testing chartjs graph">
+      <created>1397250879301</created>
+      <updated>1397250879301</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
