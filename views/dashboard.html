@@ -104,7 +104,7 @@
             <a id="responsive-menu-button" href="#">Menu</a>
         </div>    -->
 
-              <div class="col-md-9 main">
+              <div class="col-md-7 main">
 
                       <h1 class="page-header">Dashboard</h1>
                       <!--<h2 class="sub-header">Section title</h2>-->
@@ -155,7 +155,7 @@
                       </div>  <!-- close of table-responsive -->
               </div>  <!-- close of col-md-9 main -->
 
-               <div class="col-md-2 main">
+               <div class="col-md-4 main">
                     <!-- this is the video search result -->
                     <div id="result"></div>
                </div>  <!-- close of col-md-2 main -->
@@ -212,7 +212,14 @@
 
             htmlString +='<li class="clearfix"><h2>' + title + '</h2>';
             htmlString +='<div class="videothumb"><a href="' + ytlink + '" target="_blank"><img src="' + thumbimg + '" width="480" height="360"></a></div>';
-            htmlString +='<div class="meta"><p>Published on <strong>' + fulldate + '</strong></p><p>Total views: <strong>' + commafy(numviews) + '</strong></p><p>Total comments: <strong>'+ numcomms +'</strong></p><p><a href="'+ ytlink +'" class="external" target="_blank">View on YouTube</a></p><p><a href="'+ vlink +'" class="external" target="_blank">View in Fullscreen</a></p><p><strong>Alternate Thumbnails</strong>:<br><img src="'+ tinyimg1 +'"> <img src="' + tinyimg2 + '"> <img src="'+ tinyimg3 +'"></p></div></li>';
+            htmlString +='<div class="meta"><p>Published on <strong>' + fulldate + '</strong></p><p>Total views: <strong>' + commafy(numviews) + '</strong></p>' +
+                    '<p>Total comments: <strong>'+ numcomms +'</strong></p>' +
+                    '<p><a href="'+ ytlink +'" class="external" target="_blank">View on YouTube</a></p>' +
+                    '<p><a href="'+ vlink +'" class="external" target="_blank">View in Fullscreen</a></p>';
+                    // hiding the alt thumbnails
+                    //+
+                    //'<p><strong>Alternate Thumbnails</strong>:<br><img src="'+ tinyimg1 +'"> ' +
+                    //'<img src="' + tinyimg2 + '"> <img src="'+ tinyimg3 +'"></p></div></li>';
           }); // end each loop
 
           $('#videos').html(htmlString + "</ul>");
