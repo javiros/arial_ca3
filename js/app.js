@@ -5,9 +5,9 @@ var app = angular.module('arial_ca3', [
     ]).
     config(['$routeProvider', function($routeProvider) {
         $routeProvider
-            .when('/login', {templateUrl: 'views/login.html', public:true, login:true})
-            .when('/signup', {templateUrl: 'signup.html',public:true})
-            .when('/dashboard', {templateUrl: 'dashboard.html', controller: 'dashboardCtrl'})
+            .when('/login', {templateUrl: '../views/login.html', public:true, login:true})
+            .when('/signup', {templateUrl: '../views/signup.html',public:true})
+            .when('/dashboard', {templateUrl: '../views/dashboard.html', controller: 'dashboardCtrl'})
             .otherwise({redirectTo: '/dashboard'});
     }])
     .run(function($rootScope,user) {
