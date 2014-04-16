@@ -39,9 +39,10 @@ var video =
 
                 $('#videos').html(htmlString + "</ul>");
 
+                //********************************************
                 //below is attempt to embed the videos see vid_embed.js file
                 //$('#videos').html(htmlString + "</ul>").append('<iframe width="560" height="349" src="http://www.youtube.com/embed/'
-                    //+ htmlString + '?html5=1&theme=dark&showinfo=0&modestbranding=1&controls=0" allowfullscreen></iframe>');
+                //+ htmlString + '?html5=1&theme=dark&showinfo=0&modestbranding=1&controls=0" allowfullscreen></iframe>');
 
             }); // end json parsing
         }); // end click event handler

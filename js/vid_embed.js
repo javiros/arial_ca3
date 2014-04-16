@@ -1,3 +1,5 @@
+    // source  http://jsfiddle.net/pKZPP/
+
 $(document).ready(function(){
     $.getJSON("http://gdata.youtube.com/feeds/api/users/MisterAngelMarino/favorites?v=2&alt=jsonc&max-results=1",function(json){
         $.each(json.data.items, function(i){
