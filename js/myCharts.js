@@ -1,3 +1,4 @@
+/*
     //var video = video.numviews;
     //for (var i=0; i<video; i++)
 	//Get context with jQuery - using jQuery's .get() method.
@@ -30,3 +31,4 @@ var options = {
 
 new Chart(ctx).Pie(data,options);
 
+*/
