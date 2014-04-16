@@ -7,7 +7,7 @@
 
 //      client id from Ger
 
-var OAUTH2_CLIENT_ID = 'AIzaSyAgx541QWrKyNfKRNiWIOg9E45cZc6JVL8';
+var OAUTH2_CLIENT_ID = '966180836306.apps.googleusercontent.com';
 var OAUTH2_SCOPES = [
     'https://www.googleapis.com/auth/youtube'
 ];

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-framework="angular.js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/searchAPI.js"></script>
+    <script src="https://app.userapp.io/js/userapp.client.js"></script>
+    <script src="https://app.userapp.io/js/angularjs.userapp.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../js/source/canvasjs.js"></script>
+    <script type="text/javascript" src="../js/canvas.js"></script>
+    <script type="text/javascript" src="../js/angular.js"></script>
+    <!--<script type="text/javascript" src="../js/vid_embed.js"></script>-->
+
+    <title>VideoCoder</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--<link rel="stylesheet" type="text/css" href="../css/bootswatch/bootswatch-yeti.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/bootswatch/bootswatch-superhero.css">
+    <!--<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"> -->
+    <!-- Custom Css file -->
+    <link rel="stylesheet" type="text/css" href="../css/myCss.css">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
+    <!-- Include Sidr bundled CSS theme -->
+    <link rel="stylesheet" type="text/css" href="../css/jquery.sidr.dark.css">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div id=main ng-app>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand nav navbar-text title_font" href="dashboard.html">$("VideoCoder")<small> Watch & Learn!</small>
+                </a>
+            </div>  <!-- close of navbar-header -->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right navbar-brand navbar-text">
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign up</a></li>
+                    <li><a href="search.html">Search</a></li>
+
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <input type="text" class='search_input'/>
+                </form>
+            </div>  <!-- close of navbar-collapse collapse -->
+        </div>   <!-- close of container-fluid -->
+    </div> <!-- close of navbar navbar-inverse navbar-fixed-top -->
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-4 main">
+
+                <h1 class="page-header">Search for Code Tutorials</h1>
+
+                <form class="">
+                    <input type="text" class='search_input'/>
+                </form>
+
+
+            </div>  <!-- close of col-md-8 main -->
+
+            <div class="col-md-3">
+                <!-- this is the video search result -->
+                <div id="result"></div>
+            </div>  <!-- close of col-md-2 main -->
+
+
+        </div> <!-- close of row -->
+    </div> <!-- close of container-fluid -->
+</div> <!-- close of main-->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
