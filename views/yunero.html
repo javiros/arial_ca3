@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yunero - Jquery plugin displays a video feed for YouTube channel uploads or custom playlist with subscription box</title>
+	
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	
+	
+	<script type="text/javascript">
+	
+	//var youTubeURL = "http://www.youtube.com/playlist?list=PLZnxqowr6IKidF63-ybswuiO074g366-Y";
+	//var youTubeURL = "http://www.youtube.com/user/Apple?feature=blablabka";
+	//var youTubeURL = "http://www.youtube.com/user/Apple";
+	var youTubeURL = "http://www.youtube.com/playlist?list=PL1512BD72E7C9FFCA";
+	
+	//optional---------------------------------------
+	var yuneroWidgetHeight = 400; 
+	var yuneroWidgetWidth = 340; 
+	var yuneroVideoHeight = 200;
+	
+	function goClicked() {
+		$('#yunero').empty().append(' loading ...');
+		youTubeURL=$('#youTubeUrl').val();
+		
+		loadYunero();
+	}
+	
+
+	</script>
+	
+	<style>
+
+      body {
+        font-family: Calibri;
+        font-size: 14px;
+		text-align:center;
+      }
+	  
+	  
+		
+	</style>
+
+	</head>
+  <body>
+	
+		<h1>Yunero - Jquery plugin displays a video feed for YouTube channel uploads or custom playlist with subscription box</h1>
+		Enter your Youtube Channel Url: <span style="color:red;">(Ex: http://www.youtube.com/user/Apple)</span><br/>
+		OR Enter your playlist Url: <span style="color:red;">(Ex: http://www.youtube.com/playlist?list=PLZnxqowr6IKidF63-ybswuiO074g366-Y)</span><br/><br/>
+		<input type="text" id="youTubeUrl"/>&nbsp;<input type="button" value="Go" onclick="goClicked();">
+		<br/>
+		<br/>
+				<div id="yunero">
+				</div>	
+
+				<script>$('#yuneroVideoFrame').load(function(){alert('hhh');});
+				//.css('width','300px !important');
+				</script>
+
+				<script src="../js/vendor/yunero.min.js"></script>
+	
+  </body>
+</html>
+
+
+
