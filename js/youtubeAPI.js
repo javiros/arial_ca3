@@ -27,10 +27,22 @@ var video =
 
                     htmlString +='<li class="clearfix"><h2>' + title + '</h2>';
                     htmlString +='<div class="videothumb"><a href="' + ytlink + '" target="_blank"><img src="' + thumbimg + '" width="480" height="360"></a></div>';
-                    htmlString +='<div class="meta"><p>Published on <strong>' + fulldate + '</strong></p><p>Total views: <strong>' + commafy(numviews) + '</strong></p><p>Total comments: <strong>'+ numcomms +'</strong></p><p><a href="'+ ytlink +'" class="external" target="_blank">View on YouTube</a></p><p><a href="'+ vlink +'" class="external" target="_blank">View in Fullscreen</a></p><p><strong>Alternate Thumbnails</strong>:<br><img src="'+ tinyimg1 +'"> <img src="' + tinyimg2 + '"> <img src="'+ tinyimg3 +'"></p></div></li>';
+                    htmlString +='<div class="meta"><p>Published on <strong>' + fulldate + '</strong></p><p>Total views: <strong>' + commafy(numviews) + '</strong></p>' +
+                        '<p>Total comments: <strong>'+ numcomms +'</strong></p>' +
+                        '<p><a href="'+ ytlink +'" class="external" target="_blank">View on YouTube</a></p>' +
+                        '<p><a href="'+ vlink +'" class="external" target="_blank">View in Fullscreen</a></p>';
+                    // hiding the alt thumbnails
+                    //+
+                    //'<p><strong>Alternate Thumbnails</strong>:<br><img src="'+ tinyimg1 +'"> ' +
+                    //'<img src="' + tinyimg2 + '"> <img src="'+ tinyimg3 +'"></p></div></li>';
                 }); // end each loop
 
                 $('#videos').html(htmlString + "</ul>");
+
+                //below is attempt to embed the videos see vid_embed.js file
+                //$('#videos').html(htmlString + "</ul>").append('<iframe width="560" height="349" src="http://www.youtube.com/embed/'
+                    //+ htmlString + '?html5=1&theme=dark&showinfo=0&modestbranding=1&controls=0" allowfullscreen></iframe>');
+
             }); // end json parsing
         }); // end click event handler
 
