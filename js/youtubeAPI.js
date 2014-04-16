@@ -23,6 +23,7 @@ var video =
                     var vlink    = item['media$group']['media$content'][0]['url'];
                     var ytlink   = item['media$group']['media$player'][0]['url'];
                     var numviews = item['yt$statistics']['viewCount'];
+                    window.numviews1 = numviews;
                     var numcomms = item['gd$comments']['gd$feedLink']['countHint'];
 
                     htmlString +='<li class="clearfix"><h2>' + title + '</h2>';
@@ -73,11 +74,11 @@ var video =
     });
 
 // code for chart display
-$(document).ready(function()
+/*$(document).ready(function()
 {
 
-    var video = video.numviews;
-    for (var i=0; i<video; i++)
+    var videoChart = video.numviews;
+    for (var i=0; i<videoChart; i++)
     //Get context with jQuery - using jQuery's .get() method.
     var ctx = $("#myChart").get(0).getContext("2d");
     //This will get the first returned node in the jQuery collection.
@@ -107,4 +108,4 @@ $(document).ready(function()
     };
 
     new Chart(ctx).Pie(data,options);
-});
+});*/
