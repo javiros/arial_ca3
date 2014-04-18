@@ -44,19 +44,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand nav navbar-text title_font" href="dashboard.html">$("VideoCoder")<small> Watch & Learn!</small>
-             </a>
+
         </div>  <!-- close of navbar-header -->
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right navbar-brand navbar-text">
-            <li><a href="dashboard.html">Home</a></li>
+          <ul class="nav navbar-nav navbar-left navbar-brand navbar-text">
+            <!--<li><a href="dashboard.html">Home</a></li>  -->
             <li><div class="btn-group">
                   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                       Channels <span class="caret"></span>
                   </button>
                   <ul class="dropdown-menu" role="menu">
                       <ul class="nav" class="{{active}}" ng-click="$event.preventDefault()">
-                          <li><a href="#ruby" ng-click="active='ruby on rails tutorial'" class="ruby">Ruby on Rails</a></li>
+                          <li><a href="#thenewboston" ng-click="active='ruby on rails tutorial'" class="ruby">Ruby on Rails</a></li>
                           <li><a href="#node" ng-click="active='node.js introduction'" class="node">Node.js</a></li>
                           <li><a href="#mybringback" ng-click="active='android introduction tutorial'" class="android">Android</a></li>
                           <li><a href="#angular" ng-click="active='angularjs introduction tutorial'" class="angular">Angular.js</a></li>
@@ -76,11 +75,13 @@
             <li><a href="login.html">Login</a></li>
             <li><a href="#" ua-logout>Log out</a></li>
             <li><a href="signup.html">Sign up</a></li>
-            <li><a href="search.html">Search</a></li>
+            <li><a href="beginners.html">Beginners</a></li>
             <li id="stackoverflow"><a href="http://stackoverflow.com">Stuck?</a> </li>
 
 
           </ul>
+            <a class="navbar-brand nav navbar-text title_font" href="dashboard.html">$("VideoCoder")<small> Watch & Learn!</small>
+            </a>
           <form class="navbar-form navbar-right hidden">
               <input type="text" value="{{active}}" class='search_input' />
           </form>
@@ -90,35 +91,7 @@
 
     <div class="container-fluid">
       <div class="row">
-        <!--<div class="col-md-1 sidebar">-->
-
-          <!--<ul class="nav nav-sidebar">-->
-              <!--&lt;!&ndash; navbar contained in sidr toggle menu-->
-              <!--<a id="simple-menu" href="#sidr">Toggle menu</a>-->
-              <!--<div id="sidr" class="sidr_margin"> &ndash;&gt;-->
-
-              <!--<nav id="usersnav">-->
-
-                  <!--<ul class="nav" class="{{active}}" ng-click="$event.preventDefault()">-->
-                    <!--<li><a href="#ruby" ng-click="active='ruby on rails tutorial'" class="ruby">Ruby on Rails</a></li>-->
-                    <!--<li><a href="#node" ng-click="active='node.js introduction'" class="node">Node.js</a></li>-->
-                    <!--<li><a href="#mybringback" ng-click="active='android introduction tutorial'" class="android">Android</a></li>-->
-                    <!--<li><a href="#angular" ng-click="active='angularjs introduction tutorial'" class="angular">Angular.js</a></li>-->
-                    <!--<li><a href="#ember" ng-click="active='ember js introduction tutorial'" class="ember">Ember.js</a></li>-->
-                    <!--<li><a href="#ios" ng-click="active='ios beginner tutorial'" class="ios">ios</a></li>-->
-                    <!--<li><a href="#asp" ng-click="active='asp.net tutorial for beginners'" class="asp">ASP.NET</a></li>-->
-                  <!--</ul>-->
-
-	              <!--<ul class="nav">-->
-                    <!--<li>&nbsp;&nbsp;Completely Newbie?</li>-->
-                    <!--<li><a href="#edzjohnson" ng-click="active='html tutorial'" class="HTML">HTML</a></li>-->
-                    <!--<li><a href="#tutor4u" ng-click="active='css tutorial'" class="CSS">CSS</a></li>-->
-                    <!--<li><a href="#ScoobyDooobyD00" ng-click="active='javaScript tutorial'" class="JavaScript">JavaScript</a></li>-->
-                  <!--</ul>-->
-
-                <!--</nav> &lt;!&ndash; close of usersnav &ndash;&gt;-->
-           <!--</ul> &lt;!&ndash; close of nav nav-sidebar &ndash;&gt;-->
-        <!--</div> &lt;!&ndash; close of col-md-1 sidebar &ndash;&gt;-->
+          <div class="col-md-2 sidebar"></div>
 
         <!-- navbar contained in sidr toggle menu for mobile only-->
         <!--<div id="mobile-header">
@@ -160,9 +133,10 @@
                       <div class="table-responsive">
 
                                 <!-- Chart Javier Version -->
-                                <div id="charts">
-                                  <canvas id="myChart" width="400" height="400">Canvas goes here</canvas>
-                               </div>
+                                  <!-- commented so can see vids easier in testing- Ger -->
+                                     <!-- <div id="charts">
+                                     <canvas id="myChart" width="400" height="400">Canvas goes here</canvas>
+                                </div>    -->
 
 
                                 <div id="videos">
@@ -176,11 +150,24 @@
                       </div>  <!-- close of table-responsive -->
               </div>  <!-- close of col-md-9 main -->
 
-               <div class="col-md-3">
-                    <!-- this is the video search result -->
-                    <div id="result"></div>
-               </div>  <!-- close of col-md-2 main -->
+          <div class="col-md-3">
+              <!-- this is the video search result -->
+              <!--<div id="result"></div>  -->
 
+              <!-- this is the yunero video search.-->
+              <!-- <h1>Yunero - video feed</h1>
+
+             <input type="text" id="youTubeUrl"/>&nbsp;<input type="button" value="Go" onclick="goClicked();">
+             <br/>
+             <br/>
+             <div id="yunero">
+             </div>
+
+             <script>$('#yuneroVideoFrame').load(function(){alert('hhh');});
+             //.css('width','300px !important');
+             </script> -->
+
+          </div>  <!-- close of col-md-2 main  -->
 
         </div> <!-- close of row -->
       </div> <!-- close of container-fluid -->
@@ -197,7 +184,7 @@
   <!-- Link for Chart.js  -->
 
   <script type="text/javascript" src="../js/angular.js"></script>
-  <script type="text/javascript" src="../js/searchAPI.js"></script>
+  <script type="text/javascript" src="../js/searchAPI_nav.js"></script>
   <script type="text/javascript" src="../js/source/canvasjs.js"></script>
   <script type="text/javascript" src="../js/canvas.js"></script>
   <!--<script type="text/javascript" src="../js/vid_embed.js"></script>-->

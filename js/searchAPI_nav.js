@@ -2,11 +2,11 @@
 
 $(document).ready(function()
 {
-    $(".search_input").focus();
-    $(".search_input").keyup(function()
+    $(".search_input_nav").change();
+    $(".nav").click(function()
     {
-        var search_input = $(this).val();
-        var keyword= encodeURIComponent(search_input);
+        var search_input_nav = $(".search_input_nav").val();
+        var keyword= encodeURIComponent(search_input_nav);
         var yt_url='http://gdata.youtube.com/feeds/api/videos?q='+keyword+'&format=5&max-results=1&v=2&alt=jsonc';
 
         $.ajax({

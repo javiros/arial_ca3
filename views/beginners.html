@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" data-framework="angular.js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/searchAPI_nav.js"></script>
+    <script type="text/javascript" src="../js/searchAPI_nav.js"></script>
+    <script src="https://app.userapp.io/js/userapp.client.js"></script>
+    <script src="https://app.userapp.io/js/angularjs.userapp.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../js/source/canvasjs.js"></script>
+    <script type="text/javascript" src="../js/canvas.js"></script>
+    <script type="text/javascript" src="../js/angular.js"></script>
+    <!--<script type="text/javascript" src="../js/vid_embed.js"></script>-->
+
+    <title>VideoCoder</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--<link rel="stylesheet" type="text/css" href="../css/bootswatch/bootswatch-yeti.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/bootswatch/bootswatch-superhero.css">
+    <!--<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"> -->
+    <!-- Custom Css file -->
+    <link rel="stylesheet" type="text/css" href="../css/myCss.css">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
+    <!-- Include Sidr bundled CSS theme -->
+    <link rel="stylesheet" type="text/css" href="../css/jquery.sidr.dark.css">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div id=main ng-app>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand nav navbar-text title_font" href="dashboard.html">$("VideoCoder")<small> Watch & Learn!</small>
+                </a>
+            </div>  <!-- close of navbar-header -->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right navbar-brand navbar-text">
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign up</a></li>
+                    <li><a href="beginners.html">Search</a></li>
+
+                </ul>
+
+            </div>  <!-- close of navbar-collapse collapse -->
+        </div>   <!-- close of container-fluid -->
+    </div> <!-- close of navbar navbar-inverse navbar-fixed-top -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <!--     below is the original nav bar in one vertical..
+   <div class="col-md-1 sidebar">
+       <ul class="nav nav-sidebar">   -->
+            <!-- navbar contained in sidr toggle menu
+         <a id="simple-menu" href="#sidr">Toggle menu</a>
+         <div id="sidr" class="sidr_margin"> -->
+            <!--
+              <nav id="usersnav">
+
+                  <ul class="nav" class="{{active}}" ng-click="$event.preventDefault()">
+                      <li><a href="#ruby" ng-click="active='ruby on rails tutorial'" class="ruby">Ruby on Rails</a></li>
+                      <li><a href="#node" ng-click="active='node.js introduction'" class="node">Node.js</a></li>
+                      <li><a href="#mybringback" ng-click="active='android introduction tutorial'" class="android">Android</a></li>
+                      <li><a href="#angular" ng-click="active='angularjs introduction tutorial'" class="angular">Angular.js</a></li>
+                      <li><a href="#ember" ng-click="active='ember js introduction tutorial'" class="ember">Ember.js</a></li>
+                      <li><a href="#ios" ng-click="active='ios beginner tutorial'" class="ios">ios</a></li>
+                      <li><a href="#asp" ng-click="active='asp.net tutorial for beginners'" class="asp">ASP.NET</a></li>
+                  </ul>
+
+                  <ul class="nav">
+                      <li>&nbsp;&nbsp;Completely Newbie?</li>
+                      <li><a href="#edzjohnson" ng-click="active='html tutorial'" class="HTML">HTML</a></li>
+                      <li><a href="#tutor4u" ng-click="active='css tutorial'" class="CSS">CSS</a></li>
+                      <li><a href="#ScoobyDooobyD00" ng-click="active='JavaScript tutorial'" class="JavaScript">JavaScript</a></li>
+                  </ul>
+
+              </nav> <!-- close of usersnav
+          </ul> <!-- close of nav nav-sidebar
+      </div> <!-- close of col-md-1 sidebar -->
+
+            <div class="col-md-1 sidebar">
+                <ul class="nav nav-sidebar">
+                    <nav>
+                        <ul class="nav" class="{{active}}" ng-click="$event.preventDefault()">
+                            <li><a href="#ruby" ng-click="active='ruby on rails tutorial'" class="ruby">Ruby on Rails</a></li>
+                            <li><a href="#node" ng-click="active='node.js introduction'" class="node">Node.js</a></li>
+                            <li><a href="#mybringback" ng-click="active='android introduction tutorial'" class="android">Android</a></li>
+                            <li><a href="#angular" ng-click="active='angularjs introduction tutorial'" class="angular">Angular.js</a></li>
+                        </ul>
+                    </nav>
+                </ul> <!-- close of nav nav-sidebar -->
+            </div> <!-- close of col-md-1 sidebar -->
+
+            <div class="col-md-1 sidebar">
+                <ul class="nav nav-sidebar">
+                    <nav>
+                        <ul class="nav" class="{{active}}" ng-click="$event.preventDefault()">
+                            <li><a href="#ember" ng-click="active='ember js introduction tutorial'" class="ember">Ember.js</a></li>
+                            <li><a href="#ios" ng-click="active='ios beginner tutorial'" class="ios">ios</a></li>
+                            <li><a href="#asp" ng-click="active='asp.net tutorial for beginners'" class="asp">ASP.NET</a></li>
+                            <li><a href="#edzjohnson" ng-click="active='html tutorial'" class="HTML">HTML</a></li>
+                        </ul>
+                    </nav> <!-- close of usersnav -->
+                </ul> <!-- close of nav nav-sidebar -->
+            </div> <!-- close of col-md-1 sidebar -->
+
+            <div class="col-md-1 sidebar">
+                <ul class="nav nav-sidebar">
+                    <nav>
+                        <ul class="nav" class="{{active}}" ng-click="$event.preventDefault()">
+                            <li><a href="#tutor4u" ng-click="active='css tutorial'" class="CSS">CSS</a></li>
+                            <li><a href="#ScoobyDooobyD00" ng-click="active='JavaScript tutorial'" class="JavaScript">JavaScript</a></li>
+                            <li><a href="#tutor4u" ng-click="active='css tutorial'" class="CSS">CSS</a></li>
+                            <li><a href="#ScoobyDooobyD00" ng-click="active='JavaScript tutorial'" class="JavaScript">JavaScript</a></li>
+                        </ul>
+                    </nav> <!-- close of usersnav -->
+                </ul> <!-- close of nav nav-sidebar -->
+            </div> <!-- close of col-md-1 sidebar -->
+
+            <div class="col-md-5 main">
+
+                <h1 class="page-header">Beginners</h1>
+                <p>Try these beginner tutorials to help get you started</p>
+                <!-- below is the hidden search field for the beginner vids-->
+                <form class="navbar-form navbar-right hidden">
+                    <input type="text" value="{{active}}" class='search_input_nav' />
+                </form>
+
+                <!-- this is the video search result -->
+                <div id="result"></div>
+
+            </div>
+
+            <div class="col-md-3">
+                <h2>Search for more!</h2>
+
+                <!-- below is the all in search-->
+                <form class="">
+                    <input type="text" class='search_input'/>
+                </form>
+
+            </div>  <!-- close of col-md-3 main -->
+
+
+
+        </div> <!-- close of row -->
+    </div> <!-- close of container-fluid -->
+</div> <!-- close of main-->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
