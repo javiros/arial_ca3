@@ -1,75 +1,34 @@
 <!DOCTYPE html>
-<html lang="en" data-framework="angular.js">
+<html lang="en">
 <head>
-
-    <style></style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/searchAPI.js"></script>
-    <script src="https://app.userapp.io/js/userapp.client.js"></script>
-    <script src="https://app.userapp.io/js/angularjs.userapp.js"></script>
-    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="../js/source/canvasjs.js"></script>
-    <script type="text/javascript" src="../js/canvas.js"></script>
-    <script type="text/javascript" src="../js/angular.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>VideoCoder</title>
+    <title>Log in to UserApp</title>
 
     <!-- Bootstrap core CSS -->
-    <!--<link rel="stylesheet" type="text/css" href="../css/bootswatch/bootswatch-yeti.css"> -->
-    <!--<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"> -->
-    <!-- Custom Css file -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap-theme.min.css">
+
+    <!-- UserApp JS library -->
+    <script src="https://app.userapp.io/js/userapp.client.js"></script>
+    <script src="../js/UserApp.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/myCss.css">
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
-
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-
-    <![endif]-->
-
 </head>
-
 <body>
-
-<!-- Button to trigger modal -->
-<a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
-
-<!-- Modal -->
-<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="myModalLabel">Login</h3>
-    </div>
-    <div class="modal-body hero-unit"  id="login-area">
-        <form>
-            <input name="login" placeholder="Username"><br>
-            <input name="password" placeholder="Password" type="password"><br>
-            <button type="submit">Log In</button>
-
-            <p data-ng-show="error">{{ error.message }}</p>
-        </form>
-
-    </div>
-    <div class="modal-footer">
-        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-        <button class="btn btn-primary">Save changes</button>
-    </div>
+<div class="container">
+    <form class="form" onsubmit="return login()">
+        <h2 class="form-heading">Log in to VideoCoder</h2>
+        <div class="form-fields">
+            <input id="username" type="text" class="form-control" placeholder="Email" required autofocus>
+            <input id="password" type="password" class="form-control" placeholder="Password" required>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+        <p class="text-center" style="margin-top:10px;">
+            or <a href="signup.html">sign up</a>
+        </p>
+    </form>
 </div>
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
 </body>
-
 </html>
-

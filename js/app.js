@@ -15,8 +15,6 @@ var app = angular.module('arial_ca3', [
     });
 
 
-
-
 UserApp.initialize({ appId: "5349161769376" });
 
 function signup() {

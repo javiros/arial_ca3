@@ -20,3 +20,26 @@ function signup() {
 
     return false;
 }
+
+
+function login() {
+    UserApp.User.login({
+        login: document.getElementById("username").value,
+        password: document.getElementById("password").value
+    }, function(error, result) {
+        if (error) {
+            alert("Error: " + error.message);
+        } else {
+            // The user is logged in. Now get the user...
+            UserApp.User.get({ user_id: "self" }, function(error, user) {
+                if (error) {
+                    alert("Error: " + error.message);
+                } else {
+                    alert("Welcome back, " + user[0].first_name + "!");
+                }
+            });
+        }
+    });
+
+    return false;
+}
