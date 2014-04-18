@@ -2,10 +2,10 @@
 
 $(document).ready(function()
 {
-    $(".search_input").focus();
-    $(".search_input").keyup(function()
+    $(".search_input").change();
+    $(".nav").click(function()
     {
-        var search_input = $(this).val();
+        var search_input = $(".search_input").val();
         var keyword= encodeURIComponent(search_input);
         var yt_url='http://gdata.youtube.com/feeds/api/videos?q='+keyword+'&format=5&max-results=1&v=2&alt=jsonc';
 
