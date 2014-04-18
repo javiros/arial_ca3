@@ -1,13 +1,13 @@
 // code for chart display
-
+var videoChart = video.numviews;
 
         //Get context with jQuery - using jQuery's .get() method.
          var ctx = $("#myChart").get(0).getContext("2d");
     //This will get the first returned node in the jQuery collection.
     var myNewChart = new Chart(ctx);
     {
-    var videoChart = video.numviews;
-    for (var i=0; i<videoChart; i++);
+    
+    for (var i=0; i<videoChart.length; i++);
 
 
         var data = [
