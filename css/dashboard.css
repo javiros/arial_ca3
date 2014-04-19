@@ -147,8 +147,8 @@ body {
     /*min-height:100%;
     width:100%;
     border:solid 10px #ffffff;*/
-    min-height:400px;
-    width:500px;
+    min-height: 385px;
+    width: 100%;
     border:solid 10px #ffffff;
     -moz-border-radius:9px;
     -webkit-border-radius:9px;
