@@ -142,7 +142,7 @@ body {
 #result
 {
     background-color: #bababa;
-    margin-top:85px;
+    margin-top:25px;
     margin-left: 0px;
     /*min-height:100%;
     width:100%;
@@ -219,4 +219,12 @@ width:300px;
     font-size:30px;
     padding:5px;
     font-family: "Andale Mono", AndaleMono, monospace;
+}
+
+.black_txt {
+    font-size:30px;
+    padding:5px;
+    font-family: "Andale Mono", AndaleMono, monospace;
+    color: #2b3e50;;
+
 }
