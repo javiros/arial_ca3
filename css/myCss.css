@@ -52,5 +52,18 @@ body {
 
 .cont{
     list-style-type: none;
+    color:white;
+    font-size: 0.8em;
+}
+
+.cont  a{
+    color:white;
+    font-size: 1em;
+}
+
+
+.cont > li{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 

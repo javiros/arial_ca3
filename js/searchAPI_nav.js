@@ -1,10 +1,10 @@
 /* ** Created by sanjeev on 10/04/2014.*/
 
-
-var playListURL = 'http://gdata.youtube.com/feeds/api/playlists/6gx4Cwl9DGDiJSXfsJTASx9eMq_HlenQ?v=2&alt=json&callback=?';
-var videoURL= 'http://www.youtube.com/embed?v=';
+var playListURL = 'http://gdata.youtube.com/feeds/api/playlists/6gx4Cwl9DGDiJSXfsJTASx9eMq_HlenQ?v=2&&max-results=10&alt=json&callback=?';
+var videoURL= 'http://www.youtube.com/watch?v=';
 $.getJSON(playListURL, function(data) {
     var list_data="";
+    var heading = "";
     $.each(data.feed.entry, function(i, item) {
         var feedTitle = item.title.$t;
         var feedURL = item.link[1].href;
@@ -12,9 +12,11 @@ $.getJSON(playListURL, function(data) {
         var videoID = fragments[fragments.length - 2];
         var url = videoURL + videoID;
         var thumb = "http://img.youtube.com/vi/"+ videoID +"/default.jpg";
-        list_data += '<li><a href="'+ url +'" title="'+ feedTitle +'"><img alt="'+ feedTitle+'" src="'+ thumb +'"</a></li>';
+        list_data += '<li><p>'+feedTitle+'</p>;<a href="'+ url +'" title="'+ feedTitle +'"><img alt="'+ feedTitle+'" src="'+ thumb +'"</a></li>';
+
     });
     $(list_data).appendTo(".cont");
+
 });
 
 
@@ -58,6 +60,7 @@ $(document).ready(function()
     });
 });
 
+
 $(document).ready(function()
 {
     $(".search_input_nav").change();
@@ -65,7 +68,7 @@ $(document).ready(function()
     {
         var search_input_nav = $(".search_input_nav").val();
         var keyword= encodeURIComponent(search_input_nav);
-        var yt_url='http://gdata.youtube.com/feeds/api/videos?q='+keyword+'&format=5&max-results=1&v=2&alt=jsonc';
+        var yt_url='http://gdata.youtube.com/feeds/api/playlists/'+keyword+'&format=5&max-results=1&v=2&alt=jsonc';
 
         $.ajax({
             type: "GET",
@@ -97,6 +100,7 @@ $(document).ready(function()
 
     });
 });
+
 
 
 /*   advanced search */
