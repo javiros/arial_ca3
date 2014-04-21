@@ -1,5 +1,6 @@
 // code for chart display
-var videoChart = video.numviews;
+/*
+var videoChart = video;
 
         //Get context with jQuery - using jQuery's .get() method.
          var ctx = $("#myChart").get(0).getContext("2d");
@@ -32,3 +33,4 @@ var videoChart = video.numviews;
     };
 
     new Chart(ctx).Pie(data,options);
+*/

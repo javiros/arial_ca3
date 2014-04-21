@@ -1,5 +1,5 @@
 /* ** Created by sanjeev on 10/04/2014.*/
-var video = 
+var video = [];
     $(function(){
         $('#usersnav ul li a').on('click', function(e){
             e.preventDefault();
@@ -23,11 +23,11 @@ var video =
                     var vlink    = item['media$group']['media$content'][0]['url'];
                     var ytlink   = item['media$group']['media$player'][0]['url'];
                     var numviews = item['yt$statistics']['viewCount'];
-                    window.numviews1 = numviews;
                     var numcomms = item['gd$comments']['gd$feedLink']['countHint'];
 
                     htmlString +='<li class="clearfix"><h2>' + title + '</h2>';
-                    htmlString +='<div class="videothumb"><a href="' + ytlink + '" target="_blank"><img src="' + thumbimg + '" width="480" height="360"></a></div>';
+                    // code for embeded iframe!
+                    htmlString +='<div class="videothumb"><iframe src="' + vlink + '" target="_blank" width="480" height="360"></iframe></div>';
                     htmlString +='<div class="meta"><p>Published on <strong>' + fulldate + '</strong></p><p>Total views: <strong>' + commafy(numviews) + '</strong></p>' +
                         '<p>Total comments: <strong>'+ numcomms +'</strong></p>' +
                         '<p><a href="'+ ytlink +'" class="external" target="_blank">View on YouTube</a></p>' +
@@ -36,6 +36,7 @@ var video =
                     //+
                     //'<p><strong>Alternate Thumbnails</strong>:<br><img src="'+ tinyimg1 +'"> ' +
                     //'<img src="' + tinyimg2 + '"> <img src="'+ tinyimg3 +'"></p></div></li>';
+                    video.push(numviews);
                 }); // end each loop
 
                 $('#videos').html(htmlString + "</ul>");
@@ -72,40 +73,37 @@ var video =
                 + (typeof num[1] !== 'undefined'?'.'+dec:'');
         }
     });
-
-// code for chart display
-/*$(document).ready(function()
+//code for Chart
+var videoChart = video;
+videoLength = video.length
+//Get context with jQuery - using jQuery's .get() method.
+var ctx = $("#myChart").get(0).getContext("2d");
+//This will get the first returned node in the jQuery collection.
+var myNewChart = new Chart(ctx);
 {
 
-    var videoChart = video.numviews;
-    for (var i=0; i<videoChart; i++)
-    //Get context with jQuery - using jQuery's .get() method.
-    var ctx = $("#myChart").get(0).getContext("2d");
-    //This will get the first returned node in the jQuery collection.
-    var myNewChart = new Chart(ctx);
+    for (var i=0; i<videoLength; i++) {
 
-
-    {
         var data = [
-
             {
-                value: i,
+                value: videoChart[i],
                 color:"#F38630"
             },
             {
-                value : i,
+                value : videoChart[i],
                 color : "#E0E4CC"
             },
             {
-                value : i,
+                value : videoChart[i],
                 color : "#69D2E7"
             }
         ];
     }
-    var options = {
-        scaleFontColor: "#f00",
-        datasetStrokeWidth: 20
-    };
+}
+var options = {
+    scaleFontColor: "#f00",
+    datasetStrokeWidth: 20
+};
 
-    new Chart(ctx).Pie(data,options);
-});*/
+new Chart(ctx).Pie(data,options);
+
