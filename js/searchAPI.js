@@ -42,7 +42,7 @@ $(document).ready(function()
 
 /*   advanced search */
 
-function getq(url)
+/*function getq(url)
 {
     return url.substring(url.indexOf('=')+1);
 }
@@ -63,4 +63,4 @@ if (q)
 }
 else{
     quvic.PresentVideos('top_rated','',1);
-}
+}*/
