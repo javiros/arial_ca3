@@ -1,5 +1,5 @@
 /* ** Created by sanjeev on 10/04/2014.*/
-var video = [];
+window.video = [];
     $(function(){
         $('#usersnav ul li a').on('click', function(e){
             e.preventDefault();
@@ -42,13 +42,80 @@ var video = [];
                 $('#videos').html(htmlString + "</ul>");
 
                 //********************************************
-                //below is attempt to embed the videos see vid_embed.js file
-                //$('#videos').html(htmlString + "</ul>").append('<iframe width="560" height="349" src="http://www.youtube.com/embed/'
-                //+ htmlString + '?html5=1&theme=dark&showinfo=0&modestbranding=1&controls=0" allowfullscreen></iframe>');
+                //code for Chart
 
+
+//Get context with jQuery - using jQuery's .get() method.
+                var ctx = $("#myChart").get(0).getContext("2d");
+//This will get the first returned node in the jQuery collection.
+                var myNewChart = new Chart(ctx);
+                {
+
+
+
+                         var pieData = [
+
+                            {
+                                value: parseInt(video[0]),
+                                color:"#F38630",
+                                label : "TEST",
+                                labelColor : 'black',
+                                labelFontSize : '16'
+                            },
+                            {
+                                value : parseInt(video[1]),
+                                color : "#E0E4CC",
+                                label : "TEST",
+                                labelColor : 'black',
+                                labelFontSize : '16'
+                            },
+                            {
+                                value : parseInt(video[2]),
+                                color : "#69D2E7",
+                                label : "TEST",
+                                labelColor : 'black',
+                                labelFontSize : '16'
+                            },
+                            {
+                                value : parseInt(video[3]),
+                                color : "#6958E7"
+                            },
+                            {
+                                value : parseInt(video[4]),
+                                color : "#697777"
+                            },
+                            {
+                                value : parseInt(video[5]),
+                                color : "#CCCC00"
+                            },
+                            {
+                                value : parseInt(video[6]),
+                                color : "#DB9370"
+                            },
+                            {
+                                value : parseInt(video[7]),
+                                color : "#cfb53b"
+                            },
+                            {
+                                value : parseInt(video[8]),
+                                color : "#691527"
+                            },
+                            {
+                                value : parseInt(video[9]),
+                                color : "#ffff00"
+                            }
+                        ];
+
+                }
+
+                var options = {
+                    scaleFontColor: "#f00",
+                    datasetStrokeWidth: 20
+                };
+
+                new Chart(ctx).Pie(pieData,options);
             }); // end json parsing
         }); // end click event handler
-
         // commafy function source
         // http://stackoverflow.com/a/6785438/477958
         function commafy( arg ) {
@@ -73,37 +140,6 @@ var video = [];
                 + (typeof num[1] !== 'undefined'?'.'+dec:'');
         }
     });
-//code for Chart
-var videoChart = video;
-videoLength = video.length
-//Get context with jQuery - using jQuery's .get() method.
-var ctx = $("#myChart").get(0).getContext("2d");
-//This will get the first returned node in the jQuery collection.
-var myNewChart = new Chart(ctx);
-{
 
-    for (var i=0; i<videoLength; i++) {
 
-        var data = [
-            {
-                value: videoChart[i],
-                color:"#F38630"
-            },
-            {
-                value : videoChart[i],
-                color : "#E0E4CC"
-            },
-            {
-                value : videoChart[i],
-                color : "#69D2E7"
-            }
-        ];
-    }
-}
-var options = {
-    scaleFontColor: "#f00",
-    datasetStrokeWidth: 20
-};
-
-new Chart(ctx).Pie(data,options);
 
