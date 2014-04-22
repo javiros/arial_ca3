@@ -58,23 +58,17 @@ window.video = [];
                             {
                                 value: parseInt(video[0]),
                                 color:"#F38630",
-                                label : "TEST",
-                                labelColor : 'black',
+                                label : 'Sleep',
+                                labelColor : 'white',
                                 labelFontSize : '16'
                             },
                             {
                                 value : parseInt(video[1]),
-                                color : "#E0E4CC",
-                                label : "TEST",
-                                labelColor : 'black',
-                                labelFontSize : '16'
+                                color : "#E0E4CC"
                             },
                             {
                                 value : parseInt(video[2]),
-                                color : "#69D2E7",
-                                label : "TEST",
-                                labelColor : 'black',
-                                labelFontSize : '16'
+                                color : "#69D2E7"
                             },
                             {
                                 value : parseInt(video[3]),
