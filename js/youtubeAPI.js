@@ -84,75 +84,9 @@ window.vidTitle = [];
                 console.log(video);
                Chart.render();
 
-
-
-///*
-////Get context with jQuery - using jQuery's .get() method.
-//                var ctx = $("#myChart").get(0).getContext("2d");
-////This will get the first returned node in the jQuery collection.
-//                var myNewChart = new Chart(ctx);
-//                {
-//
-//
-//                         var pieData = [
-//
-//                            {
-//                                value: parseInt(video[0]),
-//                                color:"#F38630",
-//                                label : 'Sleep',
-//                                labelColor : 'white',
-//                                labelFontSize : '16'
-//                            },
-//                            {
-//                                value : parseInt(video[1]),
-//                                color : "#E0E4CC"
-//                            },
-//                            {
-//                                value : parseInt(video[2]),
-//                                color : "#69D2E7"
-//                            },
-//                            {
-//                                value : parseInt(video[3]),
-//                                color : "#6958E7"
-//                            },
-//                            {
-//                                value : parseInt(video[4]),
-//                                color : "#697777"
-//                            },
-//                            {
-//                                value : parseInt(video[5]),
-//                                color : "#CCCC00"
-//                            },
-//                            {
-//                                value : parseInt(video[6]),
-//                                color : "#DB9370"
-//                            },
-//                            {
-//                                value : parseInt(video[7]),
-//                                color : "#cfb53b"
-//                            },
-//                            {
-//                                value : parseInt(video[8]),
-//                                color : "#691527"
-//                            },
-//                            {
-//                                value : parseInt(video[9]),
-//                                color : "#ffff00"
-//                            }
-//                        ];
-//
-//                }
-//
-//                var options = {
-//                    scaleFontColor: "#f00",
-//                    datasetStrokeWidth: 20
-//                };
-//
-//                new Chart(ctx).Pie(pieData,options);*/
             }); // end json parsing
         }); // end click event handler
-        // commafy function source
-        // http://stackoverflow.com/a/6785438/477958
+
         function commafy( arg ) {
             arg += '';
             var num = arg.split('.');
