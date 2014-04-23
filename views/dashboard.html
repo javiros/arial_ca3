@@ -97,7 +97,7 @@
             <a id="responsive-menu-button" href="#">Menu</a>
         </div>    -->
 
-              <div class="col-md-8 main">
+              <div class="col-md-6 main">
 
                       <h1 class="page-header">Dashboard</h1>
                       <!--<h2 class="sub-header">Section title</h2>-->
@@ -111,29 +111,28 @@
                             <p></p>
                          <h3 class="top70">...we are stealing your money now!</h3>
                             <p></p>
+                  </div> <!-- close of ng-hide="active" -->
 
-                        <div class="imgPlaceholder col-md-8"> image here </div>
 
-                        <p class="top70 col-md-4" ng-hide="active">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat
+                        <!--<div class="imgPlaceholder"> image here </div>-->
+
+                          <div class="row col-md-12">
+                        <p class="top70 col-md-6" ng-hide="active">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat
                             vitae nibh ac congue. Cras in augue sed nulla faucibus scelerisque id vitae erat. Sed dignissim urna
                             eget commodo lobortis. Morbi sodales tincidunt massa. Etiam pretium, urna egestas iaculis tincidunt,
                             urna nulla dignissim tortor.</p>
-                         <p class="top70 col-md-4" ng-hide="active">
+                         <p class="top70 col-md-6" ng-hide="active">
                             Sed id blandit neque, luctus interdum est. Vestibulum a purus lacinia nisl vehicula blandit.
                              Donec pharetra posuere diam vel feugiat. Sed sagittis convallis nulla eget mollis.
                              Suspendisse posuere orci non arcu viverra, in aliquet purus auctor.
                              onec porttitor nunc arcu, eget tempor quam viverra laoreet. Sed id blandit diam.</p>
-                  </div> <!-- close of ng-hide="active" -->
+                           </div>
+
+
 
                       <h3 ng-show="active">You are watching <b>{{active}}</b>!</h3>
 
                       <div class="table-responsive">
-
-                                <!-- Chart Javier Version -->
-                                  <!-- commented so can see vids easier in testing- Ger -->
-                                      <div id="charts">
-                                     <canvas id="myChart" width="400" height="400">Canvas goes here</canvas>
-                                </div>
 
                                 <div id="videos">
                                   <!-- vids go here -->
@@ -144,9 +143,14 @@
                               </div>  --> <!-- close of chartcontainer-->
 
                       </div>  <!-- close of table-responsive -->
-              </div>  <!-- close of col-md-9 main -->
+              </div>  <!-- close of col-md-6 main -->
 
-          <div class="col-md-3">
+          <div class="col-md-4">
+              <!-- Chart Javier Version -->
+              <div id="charts">
+                  <canvas id="myChart" width="400" height="400">Canvas goes here</canvas>
+              </div>
+
               <!-- this is the video search result -->
               <!--<div id="result"></div>  -->
 
