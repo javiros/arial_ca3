@@ -9,7 +9,7 @@ function signup() {
         login: document.getElementById("email").value,
         first_name: document.getElementById("name").value,
         email: document.getElementById("email").value,
-        password: document.getElementById("password").value
+        password: document.getElementById("signup_password").value
     }, function(error, user) {
         if (error) {
             alert("Error: " + error.message);
@@ -25,7 +25,7 @@ function signup() {
 function login() {
     UserApp.User.login({
         login: document.getElementById("username").value,
-        password: document.getElementById("password").value
+        password: document.getElementById("login_password").value
     }, function(error, result) {
         if (error) {
             alert("Error: " + error.message);
