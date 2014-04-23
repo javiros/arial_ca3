@@ -56,7 +56,7 @@
                         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                             Beginners Channels <span class="caret"></span>
                         </button>
-                        <ul class="dropdown-menu no-collapse" role="menu">
+                        <ul class="dropdown-menu no-collapse" role="menu" id="navSelector">
                             <ul class="nav sidebar" class="{{active}}" ng-click="$event.preventDefault()">
                                 <li><a href="#ruby" ng-click="active='6gx4Cwl9DGDiJSXfsJTASx9eMq_HlenQ'" class="ruby">Ajax</a></li>
                                 <li><a href="#php" ng-click="active='442FA2C127377F07'" class="asp">PHP</a></li>
@@ -113,8 +113,10 @@
             </div>
             <row>
             <div class="col-md-3">
-
-                </div> <!-- close of col-md-1 sidebar -->
+               <div id="sidebarTitle">
+                    <h3 ng-show="active">You are watching <b><span id="channelName"></span></b></h3>
+               </div>
+                 <!-- close of col-md-1 sidebar -->
 
                 <form class="">
 
@@ -167,6 +169,7 @@
 
 <!-- Optional: imagesLoaded script to better support images inside your tooltips -->
 <script type="text/javascript" src="../js/qtip/imagesloaded.pkg.min.js"></script>
+<script type="text/javascript" src="../js/linkSelector.js"></script>
 
 </body>
 </html>
