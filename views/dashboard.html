@@ -11,10 +11,13 @@
 
 
     <title>VideoCoder</title>
+      <script type="text/javascript" src="../js/vendor/jquery.leanModal.min.js"></script>
       <link type="text/css" rel="stylesheet" href="../css/qtip/jquery.qtip.css" />
     <!-- Bootstrap core CSS -->
     <!--<link rel="stylesheet" type="text/css" href="../css/bootswatch/bootswatch-yeti.css"> -->
    <link rel="stylesheet" type="text/css" href="../css/bootswatch/bootswatch-superhero.css">
+      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+      <link type="text/css" rel="stylesheet" href="../css/login.css" />
     <!--<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"> -->
     <!-- Custom Css file -->
     <link rel="stylesheet" type="text/css" href="../css/myCss.css">
@@ -55,15 +58,15 @@
                   </button>
                   <ul class="dropdown-menu no-collapse" role="menu">
                       <ul class="nav" class="{{active}}" ng-click="$event.preventDefault()">
-                          <li><a href="#thenewboston" ng-click="active='ruby on rails tutorial'" class="ruby">Ruby on Rails</a></li>
+                          <li><a href="#thenewboston" ng-click="active='Ruby on Rails tutorial'" class="ruby">Ruby on Rails</a></li>
                           <li><a href="#node" ng-click="active='node.js introduction'" class="node">Node.js</a></li>
-                          <li><a href="#mybringback" ng-click="active='android introduction tutorial'" class="android">Android</a></li>
-                          <li><a href="#angular" ng-click="active='angularjs introduction tutorial'" class="angular">Angular.js</a></li>
-                          <li><a href="#ember" ng-click="active='ember js introduction tutorial'" class="ember">Ember.js</a></li>
-                          <li><a href="#ios" ng-click="active='ios beginner tutorial'" class="ios">ios</a></li>
+                          <li><a href="#mybringback" ng-click="active='Android introduction tutorial'" class="android">Android</a></li>
+                          <li><a href="#angular" ng-click="active='angular.js introduction tutorial'" class="angular">Angular.js</a></li>
+                          <li><a href="#ember" ng-click="active='ember.js introduction tutorial'" class="ember">Ember.js</a></li>
+                          <li><a href="#ios" ng-click="active='ios beginner tutorial'" class="ios">iOS</a></li>
                           <li><a href="#asp" ng-click="active='asp.net tutorial for beginners'" class="asp">ASP.NET</a></li>
                           <li class="divider">
-                          <li>&nbsp;&nbsp;Completely Newbie?</li>
+                          <li style="margin-left: 10px;">Completely Newbie?</li>
                           <li><a href="#edzjohnson" ng-click="active='html tutorial'" class="HTML">HTML</a></li>
                           <li><a href="#tutor4u" ng-click="active='css tutorial'" class="CSS">CSS</a></li>
                           <li><a href="#ScoobyDooobyD00" ng-click="active='javaScript tutorial'" class="JavaScript">JavaScript</a></li>
@@ -72,8 +75,9 @@
                 </div>
              <li>
               <li><a href="dashboard.html">Home</a></li>
-            <li><a href="login.html">Login</a></li>
+              <li><a id="modal_trigger" href="#modal" class="btn">Login or Register</a></li>
             <li><a href="beginners.html">Beginners</a></li>
+              <li><a href="search.html">YouTube Search</a></li>
             <li id="stackoverflow"><a href="http://stackoverflow.com">Stuck?</a> </li>
 
           </ul>
@@ -148,7 +152,7 @@
           <div class="col-md-4">
               <!-- Chart Javier Version -->
               <div id="charts">
-                  <canvas id="myChart" width="400" height="400">Canvas goes here</canvas>
+                  <canvas id="myChart" width="300" height="300">Canvas goes here</canvas>
               </div>
 
               <!-- this is the video search result -->
@@ -173,6 +177,93 @@
   </div> <!-- close of main-->
 
 
+    <!-- **************************************************-->
+     <!-- below is the login modal instead of separate login page-->
+  <div id="modal" class="popupContainer" style="display:none;">
+      <header class="popupHeader">
+          <span class="header_title login_font">Login</span>
+          <span class="modal_close"><i class="fa fa-times"></i></span>
+      </header>
+
+      <section class="popupBody">
+          <!-- Social Login -->
+          <div class="social_login">
+              <!--<div class="">
+                  <a href="#" class="social_box fb">
+                      <span class="icon"><i class="fa fa-facebook"></i></span>
+                      <span class="icon_title">Connect with Facebook</span>
+                  </a>
+                  <a href="#" class="social_box google">
+                      <span class="icon"><i class="fa fa-google-plus"></i></span>
+                      <span class="icon_title">Connect with Google</span>
+                  </a>
+              </div>
+
+              <div class="centeredText">
+                  <span>Or use your Email address</span>
+              </div>-->
+
+              <div class="action_btns">
+                  <div class="one_half"><a href="#" id="login_form" class="btn login_font">Login</a></div>
+                  <div class="one_half last"><a href="#" id="register_form" class="btn login_font">Sign up</a></div>
+              </div>
+          </div>
+
+          <!-- Username & Password Login form -->
+          <div class="user_login login_font">
+              <form>
+                  <label>Email / Username</label>
+                  <input type="text" />
+                  <br />
+
+                  <label>Password</label>
+                  <input type="password" />
+                  <br />
+
+                  <div class="checkbox">
+                      <input id="remember" type="checkbox" />
+                      <label for="remember">Remember me on this computer</label>
+                  </div>
+
+                  <div class="action_btns">
+                      <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                      <div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
+                  </div>
+              </form>
+
+              <a href="#" class="forgot_password login_font">Forgot password?</a>
+          </div>
+
+          <!-- Register Form -->
+          <div class="user_register login_font">
+              <form>
+                  <label>Full Name</label>
+                  <input type="text" />
+                  <br />
+
+                  <label>Email Address</label>
+                  <input type="email" />
+                  <br />
+
+                  <label>Password</label>
+                  <input type="password" />
+                  <br />
+
+                  <div class="checkbox">
+                      <input id="send_updates" type="checkbox" />
+                      <label for="send_updates">Send me occasional email updates</label>
+                  </div>
+
+                  <div class="action_btns">
+                      <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                      <div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
+                  </div>
+              </form>
+          </div>
+      </section>
+  </div>
+  </div>
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -189,6 +280,7 @@
   <script type="text/javascript" src="../js/bootstrap-modal.js"></script>
   <script type="text/javascript" src="../js/Chart.js"></script>
   <script type="text/javascript" src="../js/myCharts.js"></script>
+  <script type="text/javascript" src="../js/login.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <!-- Include the Sidr JS -->
   <script src="../js/jquery.sidr.min.js"></script>

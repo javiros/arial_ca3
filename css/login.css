@@ -1,6 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic);
 
-body {font-family: 'Source Sans Pro', sans-serif; font-size: 14px; color: #666;}
+/* to allow placement of reg on dashboard, remove this body and provide font colour for login details */
+/*body {font-family: 'Source Sans Pro', sans-serif; font-size: 14px; color: #ffffff;}*/
+
+.login_font{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px; color: #666;
+}
 
 #lean_overlay {
     position: fixed;

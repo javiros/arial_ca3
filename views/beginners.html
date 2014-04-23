@@ -11,10 +11,13 @@
 
 
     <title>VideoCoder</title>
+    <script type="text/javascript" src="../js/vendor/jquery.leanModal.min.js"></script>
     <link type="text/css" rel="stylesheet" href="../css/qtip/jquery.qtip.css" />
     <!-- Bootstrap core CSS -->
     <!--<link rel="stylesheet" type="text/css" href="../css/bootswatch/bootswatch-yeti.css"> -->
     <link rel="stylesheet" type="text/css" href="../css/bootswatch/bootswatch-superhero.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="../css/login.css" />
     <!--<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"> -->
     <!-- Custom Css file -->
     <link rel="stylesheet" type="text/css" href="../css/myCss.css">
@@ -29,7 +32,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <script src="../js/bootstrap.js" type="text/javascript"></script>
     <![endif]-->
-
+    <link rel="stylesheet" type="text/css" href="../css/dropdown_no_collapse.css">
 </head>
 
 <body>
@@ -53,28 +56,26 @@
                         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                             Channels <span class="caret"></span>
                         </button>
-                        <ul class="dropdown-menu" role="menu">
+                        <ul class="dropdown-menu no-collapse" role="menu">
                             <ul class="nav" class="{{active}}" ng-click="$event.preventDefault()">
-                                <li><a href="#thenewboston" ng-click="active='ruby on rails tutorial'" class="ruby">Ruby on Rails</a></li>
+                                <li><a href="#thenewboston" ng-click="active='Ruby on Rails tutorial'" class="ruby">Ruby on Rails</a></li>
                                 <li><a href="#node" ng-click="active='node.js introduction'" class="node">Node.js</a></li>
-                                <li><a href="#mybringback" ng-click="active='android introduction tutorial'" class="android">Android</a></li>
-                                <li><a href="#angular" ng-click="active='angularjs introduction tutorial'" class="angular">Angular.js</a></li>
-                                <li><a href="#ember" ng-click="active='ember js introduction tutorial'" class="ember">Ember.js</a></li>
-                                <li><a href="#ios" ng-click="active='ios beginner tutorial'" class="ios">ios</a></li>
+                                <li><a href="#mybringback" ng-click="active='Android introduction tutorial'" class="android">Android</a></li>
+                                <li><a href="#angular" ng-click="active='angular.js introduction tutorial'" class="angular">Angular.js</a></li>
+                                <li><a href="#ember" ng-click="active='ember.js introduction tutorial'" class="ember">Ember.js</a></li>
+                                <li><a href="#ios" ng-click="active='ios beginner tutorial'" class="ios">iOS</a></li>
                                 <li><a href="#asp" ng-click="active='asp.net tutorial for beginners'" class="asp">ASP.NET</a></li>
                                 <li class="divider">
-                                <li>&nbsp;&nbsp;Completely Newbie?</li>
+                                <li style="margin-left: 10px;">Completely Newbie?</li>
                                 <li><a href="#edzjohnson" ng-click="active='html tutorial'" class="HTML">HTML</a></li>
                                 <li><a href="#tutor4u" ng-click="active='css tutorial'" class="CSS">CSS</a></li>
                                 <li><a href="#ScoobyDooobyD00" ng-click="active='javaScript tutorial'" class="JavaScript">JavaScript</a></li>
-                                <li><a href="#ajax" ng-click="active='6gx4Cwl9DGDiJSXfsJTASx9eMq'" class="asp">Ajax</a></li>
-
                             </ul>
                         </ul>
                     </div>
                     <li>
                     <li><a href="dashboard.html">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a id="modal_trigger" href="#modal" class="btn">Login or Register</a></li>
                     <li><a href="beginners.html">Beginners</a></li>
                     <li><a href="search.html">YouTube Search</a></li>
                     <li id="stackoverflow"><a href="http://stackoverflow.com">Stuck?</a> </li>
@@ -199,10 +200,8 @@
 
 
                 <!-- below is the all in search-->
-
                 </row>
-            </div>  <!-- close of col-md-3 main -->
-
+             </div>  <!-- close of col-md-3 main -->
 
 
         </div> <!-- close of row -->

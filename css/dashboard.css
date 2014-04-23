@@ -245,3 +245,10 @@ width:300px;
     color: #2b3e50;;
 
 }
+
+  /*
+@media(max-width: 767px) {
+    .navbar.navbar-default {
+        position:fixed; top:0; left:0; z-index:1030;
+    }
+}     */
