@@ -27,8 +27,8 @@ window.video = [];
 
                     htmlString +='<li class="clearfix"><h2>' + title + '</h2>';
                     // code for embeded iframe!
-                    htmlString +='<div class="videothumb"><iframe src="' + vlink + '" target="_blank" width="480" height="360"></iframe></div>';
-                    htmlString +='<div class="meta"><p>Published on <strong>' + fulldate + '</strong></p><p>Total views: <strong>' + commafy(numviews) + '</strong></p>' +
+                    htmlString +='<div class="video-container col-md-9"><iframe src="' + vlink + '" target="_blank" width="480" height="360"></iframe></div>';
+                    htmlString +='<div class="meta col-md-3"><p>Published on <strong>' + fulldate + '</strong></p><p>Total views: <strong>' + commafy(numviews) + '</strong></p>' +
                         '<p>Total comments: <strong>'+ numcomms +'</strong></p>' +
                         '<p><a href="'+ ytlink +'" class="external" target="_blank">View on YouTube</a></p>' +
                         '<p><a href="'+ vlink +'" class="external" target="_blank">View in Fullscreen</a></p>';
