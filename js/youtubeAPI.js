@@ -1,5 +1,6 @@
 /* ** Created by sanjeev on 10/04/2014.*/
 window.video = [];
+window.vidTitle = [];
     $(function(){
         $('#usersnav ul li a').on('click', function(e){
             e.preventDefault();
@@ -37,6 +38,7 @@ window.video = [];
                     //'<p><strong>Alternate Thumbnails</strong>:<br><img src="'+ tinyimg1 +'"> ' +
                     //'<img src="' + tinyimg2 + '"> <img src="'+ tinyimg3 +'"></p></div></li>';
                     video.push(numviews);
+                    vidTitle.push(title);
                 }); // end each loop
 
                 $('#videos').html(htmlString + "</ul>");
@@ -45,17 +47,12 @@ window.video = [];
                 //code for Chart
 
 
-
-             /*   //below is testing to display text in chart
-                var ctx = $("#myChart").get(0).getContext("2d");
-                //var myNewChart = new Chart(ctx);
-                //var myNewChart = new CanvasJS.Chart((ctx),"myChart", {
-                var myNewChart = new CanvasJS.Chart("myChart",
+                var Chart = new CanvasJS.Chart("Chart",
                     {
                     title:{
                         text: "Videos Viewed"
                     },
-                    theme: "theme2",
+                    theme: "theme4",
                     data: [
                         {type: "pie",
                             indexLabelFontFamily: "Garamond",
@@ -64,11 +61,16 @@ window.video = [];
                             showInLegend: true,
                             toolTipContent:"{label}",
                             dataPoints: [
-                                { value: parseInt(video[0]),legendText:"Google", label: "Google"  },
-                                { value: parseInt(video[1]),legendText:"Google", label: "Google"  },
-                                { value: parseInt(video[2]),legendText:"Google", label: "Google"  },
-                                { value: parseInt(video[3]),legendText:"Google", label: "Google"  },
-                                { value: parseInt(video[4]),legendText:"Google", label: "Google"  }
+                                { y: parseInt(video[0]),legendText:vidTitle[0], label: video[0]  },
+                                { y: parseInt(video[1]),legendText:vidTitle[1], label: video[1]  },
+                                { y: parseInt(video[2]),legendText:vidTitle[2], label: video[2]  },
+                                { y: parseInt(video[3]),legendText:vidTitle[3], label: video[3]  },
+                                { y: parseInt(video[3]),legendText:vidTitle[4], label: video[4]  },
+                                { y: parseInt(video[3]),legendText:vidTitle[5], label: video[5]  },
+                                { y: parseInt(video[3]),legendText:vidTitle[6], label: video[6]  },
+                                { y: parseInt(video[3]),legendText:vidTitle[7], label: video[7]  },
+                                { y: parseInt(video[3]),legendText:vidTitle[8], label: video[8]  },
+                                { y: parseInt(video[4]),legendText:vidTitle[9], label: video[9]  }
                             ]
                         }
                     ]
@@ -78,73 +80,74 @@ window.video = [];
                     scaleFontColor: "#f00",
                     datasetStrokeWidth: 20
                 };
-                //myNewChart.render();
-                new Chart(ctx).Pie(myNewChart,options);
-*/
+                console.log(video);
+               Chart.render();
 
 
-//Get context with jQuery - using jQuery's .get() method.
-                var ctx = $("#myChart").get(0).getContext("2d");
-//This will get the first returned node in the jQuery collection.
-                var myNewChart = new Chart(ctx);
-                {
 
-
-                         var pieData = [
-
-                            {
-                                value: parseInt(video[0]),
-                                color:"#F38630",
-                                label : 'Sleep',
-                                labelColor : 'white',
-                                labelFontSize : '16'
-                            },
-                            {
-                                value : parseInt(video[1]),
-                                color : "#E0E4CC"
-                            },
-                            {
-                                value : parseInt(video[2]),
-                                color : "#69D2E7"
-                            },
-                            {
-                                value : parseInt(video[3]),
-                                color : "#6958E7"
-                            },
-                            {
-                                value : parseInt(video[4]),
-                                color : "#697777"
-                            },
-                            {
-                                value : parseInt(video[5]),
-                                color : "#CCCC00"
-                            },
-                            {
-                                value : parseInt(video[6]),
-                                color : "#DB9370"
-                            },
-                            {
-                                value : parseInt(video[7]),
-                                color : "#cfb53b"
-                            },
-                            {
-                                value : parseInt(video[8]),
-                                color : "#691527"
-                            },
-                            {
-                                value : parseInt(video[9]),
-                                color : "#ffff00"
-                            }
-                        ];
-
-                }
-
-                var options = {
-                    scaleFontColor: "#f00",
-                    datasetStrokeWidth: 20
-                };
-
-                new Chart(ctx).Pie(pieData,options);
+///*
+////Get context with jQuery - using jQuery's .get() method.
+//                var ctx = $("#myChart").get(0).getContext("2d");
+////This will get the first returned node in the jQuery collection.
+//                var myNewChart = new Chart(ctx);
+//                {
+//
+//
+//                         var pieData = [
+//
+//                            {
+//                                value: parseInt(video[0]),
+//                                color:"#F38630",
+//                                label : 'Sleep',
+//                                labelColor : 'white',
+//                                labelFontSize : '16'
+//                            },
+//                            {
+//                                value : parseInt(video[1]),
+//                                color : "#E0E4CC"
+//                            },
+//                            {
+//                                value : parseInt(video[2]),
+//                                color : "#69D2E7"
+//                            },
+//                            {
+//                                value : parseInt(video[3]),
+//                                color : "#6958E7"
+//                            },
+//                            {
+//                                value : parseInt(video[4]),
+//                                color : "#697777"
+//                            },
+//                            {
+//                                value : parseInt(video[5]),
+//                                color : "#CCCC00"
+//                            },
+//                            {
+//                                value : parseInt(video[6]),
+//                                color : "#DB9370"
+//                            },
+//                            {
+//                                value : parseInt(video[7]),
+//                                color : "#cfb53b"
+//                            },
+//                            {
+//                                value : parseInt(video[8]),
+//                                color : "#691527"
+//                            },
+//                            {
+//                                value : parseInt(video[9]),
+//                                color : "#ffff00"
+//                            }
+//                        ];
+//
+//                }
+//
+//                var options = {
+//                    scaleFontColor: "#f00",
+//                    datasetStrokeWidth: 20
+//                };
+//
+//                new Chart(ctx).Pie(pieData,options);*/
             }); // end json parsing
         }); // end click event handler
         // commafy function source
