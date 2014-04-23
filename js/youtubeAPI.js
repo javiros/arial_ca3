@@ -45,12 +45,49 @@ window.video = [];
                 //code for Chart
 
 
+
+             /*   //below is testing to display text in chart
+                var ctx = $("#myChart").get(0).getContext("2d");
+                //var myNewChart = new Chart(ctx);
+                //var myNewChart = new CanvasJS.Chart((ctx),"myChart", {
+                var myNewChart = new CanvasJS.Chart("myChart",
+                    {
+                    title:{
+                        text: "Videos Viewed"
+                    },
+                    theme: "theme2",
+                    data: [
+                        {type: "pie",
+                            indexLabelFontFamily: "Garamond",
+                            indexLabelFontSize: 20,
+                            startAngle:-20,
+                            showInLegend: true,
+                            toolTipContent:"{label}",
+                            dataPoints: [
+                                { value: parseInt(video[0]),legendText:"Google", label: "Google"  },
+                                { value: parseInt(video[1]),legendText:"Google", label: "Google"  },
+                                { value: parseInt(video[2]),legendText:"Google", label: "Google"  },
+                                { value: parseInt(video[3]),legendText:"Google", label: "Google"  },
+                                { value: parseInt(video[4]),legendText:"Google", label: "Google"  }
+                            ]
+                        }
+                    ]
+                });
+
+                var options = {
+                    scaleFontColor: "#f00",
+                    datasetStrokeWidth: 20
+                };
+                //myNewChart.render();
+                new Chart(ctx).Pie(myNewChart,options);
+*/
+
+
 //Get context with jQuery - using jQuery's .get() method.
                 var ctx = $("#myChart").get(0).getContext("2d");
 //This will get the first returned node in the jQuery collection.
                 var myNewChart = new Chart(ctx);
                 {
-
 
 
                          var pieData = [
