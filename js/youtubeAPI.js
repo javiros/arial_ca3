@@ -52,7 +52,7 @@ window.vidTitle = [];
                     title:{
                         text: "Videos Viewed"
                     },
-                    theme: "theme4",
+                    theme: "theme5",
                     data: [
                         {type: "pie",
                             indexLabelFontFamily: "Garamond",
