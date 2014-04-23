@@ -49,16 +49,27 @@ window.vidTitle = [];
 
                 var Chart = new CanvasJS.Chart("Chart",
                     {
+                        backgroundColor: "#2b3e50",
+
                     title:{
-                        text: "Videos Viewed"
+                        text: "Videos Viewed",
+                        fontColor: "#fff"
                     },
+                        legend: {
+                            fontColor: "#fff"
+                        },
+                        label: {
+                            fontColor: "#fff"
+                        },
                     theme: "theme1",
                     data: [
                         {type: "pie",
-                            indexLabelFontFamily: "Garamond",
-                            indexLabelFontSize: 20,
+                            indexLabelFontFamily: "Helvetica",
+                            indexLabelFontSize: 15,
+                            indexLabelFontColor: "#fff",
                             legendMarkerType: "square",
                             startAngle:-20,
+
                             showInLegend: true,
                             toolTipContent:"{legendText}",
                             dataPoints: [
