@@ -29,7 +29,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <script src="../js/bootstrap.js" type="text/javascript"></script>
     <![endif]-->
-
+      <link rel="stylesheet" type="text/css" href="../css/dropdown_no_collapse.css">
   </head>
 
   <body>
@@ -53,7 +53,7 @@
                   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                       Channels <span class="caret"></span>
                   </button>
-                  <ul class="dropdown-menu" role="menu">
+                  <ul class="dropdown-menu no-collapse" role="menu">
                       <ul class="nav" class="{{active}}" ng-click="$event.preventDefault()">
                           <li><a href="#thenewboston" ng-click="active='ruby on rails tutorial'" class="ruby">Ruby on Rails</a></li>
                           <li><a href="#node" ng-click="active='node.js introduction'" class="node">Node.js</a></li>
