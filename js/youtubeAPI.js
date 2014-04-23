@@ -52,14 +52,15 @@ window.vidTitle = [];
                     title:{
                         text: "Videos Viewed"
                     },
-                    theme: "theme5",
+                    theme: "theme1",
                     data: [
                         {type: "pie",
                             indexLabelFontFamily: "Garamond",
                             indexLabelFontSize: 20,
+                            legendMarkerType: "square",
                             startAngle:-20,
                             showInLegend: true,
-                            toolTipContent:"{label}",
+                            toolTipContent:"{legendText}",
                             dataPoints: [
                                 { y: parseInt(video[0]),legendText:vidTitle[0], label: video[0]  },
                                 { y: parseInt(video[1]),legendText:vidTitle[1], label: video[1]  },
