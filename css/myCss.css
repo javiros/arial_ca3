@@ -5,6 +5,10 @@
 	/*margin-left: 20% !important;*/
 
 }
+
+#fiddlerTitle {
+    margin-left: 3%;
+}
 body {
     padding-top: 40px;
     padding-bottom: 40px;

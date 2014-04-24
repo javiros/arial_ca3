@@ -12,4 +12,7 @@ $(document).ready(function()
         }
     })
 
+    $("#fiddlerTitle").blink();
+    $("#fiddlerTitle").fadeOut(10000);
+
 });
