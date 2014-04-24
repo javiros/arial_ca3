@@ -1,1 +1,4 @@
-<?php include_once("views/dashboard.html"); ?>
+<?php
+include "views/dashboard.html";
+include "views/beginners.html";
+?>
