@@ -220,7 +220,6 @@ width:300px;
 }
 
 .imgPlaceholder {
-
     height: 150px;
     border:2px solid;
     border-radius:15px;
@@ -228,7 +227,6 @@ width:300px;
     background-color: #dbdbdb;
     margin:10px 5px;
     float: left;
-
 }
 
 .title_font
@@ -242,17 +240,21 @@ width:300px;
     font-size:30px;
     padding:5px;
     font-family: "Andale Mono", AndaleMono, monospace;
-    color: #2b3e50;;
-
+    color: #2b3e50;
 }
-
-  /*
-@media(max-width: 767px) {
-    .navbar.navbar-default {
-        position:fixed; top:0; left:0; z-index:1030;
-    }
-}     */
 
 .canvas_style {
     background-color: #dbdbdb;
+}
+
+.steps_font
+{
+    font-size:15px;
+    /*font-family: "Andale Mono", AndaleMono, monospace;*/
+}
+
+.bottom {
+    position: absolute;
+    bottom:0;
+    right: 0;
 }

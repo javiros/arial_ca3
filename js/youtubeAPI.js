@@ -56,7 +56,9 @@ window.vidTitle = [];
                         fontColor: "#fff"
                     },
                         legend: {
-                            fontColor: "#fff"
+                            fontColor: "#fff",
+                            fontFamily: "Helvetica",
+                            fontSize: 15
                         },
                         label: {
                             fontColor: "#fff"
@@ -68,6 +70,7 @@ window.vidTitle = [];
                             indexLabelFontSize: 15,
                             indexLabelFontColor: "#fff",
                             legendMarkerType: "square",
+
                             startAngle:-20,
 
                             showInLegend: true,
