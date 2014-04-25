@@ -1,3 +1,3 @@
 <?php
-include_once( "views/fiddler.html");
+include_once( "views/beginners.html");
 ?>
