@@ -34,7 +34,7 @@
 
 <body>
 
-<div id=main ng-app>
+<div id="main" ng-app>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -47,41 +47,40 @@
 
             </div>  <!-- close of navbar-header -->
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-left navbar-brand navbar-text">
+                <ul class="nav navbar-nav navbar-left navbar-text">
                     <!--<li><a href="dashboard.html">Home</a></li>  -->
-                    <li>
-                        <div id="usersnav" class="btn-group">
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                                Channels <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu no-collapse" role="menu">
-                                <ul class="nav" class="{{active}}" ng-click="$event.preventDefault()">
-                                    <li><a href="#thenewboston" ng-click="active='Ruby on Rails tutorial'" class="ruby">Ruby on Rails</a></li>
-                                    <li><a href="#node" ng-click="active='node.js introduction'" class="node">Node.js</a></li>
-                                    <li><a href="#mybringback" ng-click="active='Android introduction tutorial'" class="android">Android</a></li>
-                                    <li><a href="#angular" ng-click="active='angular.js introduction tutorial'" class="angular">Angular.js</a></li>
-                                    <li><a href="#ember" ng-click="active='ember.js introduction tutorial'" class="ember">Ember.js</a></li>
-                                    <li><a href="#ios" ng-click="active='ios beginner tutorial'" class="ios">iOS</a></li>
-                                    <li><a href="#asp" ng-click="active='asp.net tutorial for beginners'" class="asp">ASP.NET</a></li>
-                                    <li class="divider">
-                                    <li style="margin-left: 10px;">Completely Newbie?</li>
-                                    <li><a href="#edzjohnson" ng-click="active='html tutorial'" class="HTML">HTML</a></li>
-                                    <li><a href="#tutor4u" ng-click="active='css tutorial'" class="CSS">CSS</a></li>
-                                    <li><a href="#ScoobyDooobyD00" ng-click="active='javaScript tutorial'" class="JavaScript">JavaScript</a></li>
-                                </ul>
+                 <!--   <li><div id="usersnav" class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Channels <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu no-collapse" role="menu">
+                            <ul class="nav" class="{{active}}" ng-click="$event.preventDefault()">
+                                <li><a href="#thenewboston" ng-click="active='Ruby on Rails tutorial'" class="ruby">Ruby on Rails</a></li>
+                                <li><a href="#node" ng-click="active='node.js introduction'" class="node">Node.js</a></li>
+                                <li><a href="#mybringback" ng-click="active='Android introduction tutorial'" class="android">Android</a></li>
+                                <li><a href="#angular" ng-click="active='angular.js introduction tutorial'" class="angular">Angular.js</a></li>
+                                <li><a href="#ember" ng-click="active='ember.js introduction tutorial'" class="ember">Ember.js</a></li>
+                                <li><a href="#ios" ng-click="active='ios beginner tutorial'" class="ios">iOS</a></li>
+                                <li><a href="#asp" ng-click="active='asp.net tutorial for beginners'" class="asp">ASP.NET</a></li>
+                                <!--<li class="divider">
+                                <li style="margin-left: 10px;">Completely Newbie?</li>-->
+                                <!--<li><a href="#edzjohnson" ng-click="active='html tutorial'" class="HTML">HTML</a></li>
+                                <li><a href="#tutor4u" ng-click="active='css tutorial'" class="CSS">CSS</a></li>
+                                <li><a href="#ScoobyDooobyD00" ng-click="active='javaScript tutorial'" class="JavaScript">JavaScript</a></li>
                             </ul>
-                         </div>
-                    </li>
-                    <li>
-                    <li><a href="../index.php">Home</a></li>
-                    <li><a id="modal_trigger" href="#modal" class="btn">Login or Register</a></li>
+                        </ul>
+                    </div>
+                    <li> -->
+                        <li><a href="../index.php">Home</a></li>
                     <li><a href="../beginners.php">Beginners</a></li>
                     <!--<li><a href="search.html">YouTube Search</a></li>-->
+                    <li id="fiddlerjs"><a href="../fiddler.php">Practice</a></li>
                     <li id="stackoverflow"><a href="http://stackoverflow.com">Stuck?</a> </li>
-                    <li id="fiddlerjs"><a href="../fiddler.php">Practice?</a></li>
+                    <li><a id="modal_trigger" href="#modal" class="">Login or Register</a></li>
+
                 </ul>
                 <ul class="pull-right">
-                    <a class="navbar-brand nav navbar-text title_font" href="../index.php"><span class="black_txt">$("VideoCoder")<p><small id="reallySmall">Watch & Learn!</small></p></span>
+                    <a class="navbar-brand nav navbar-text title_font" href="../index.php">
+                        <span class="black_txt">$("VideoCoder")<p><small id="reallySmall">Watch & Learn!</small></p></span>
                         <!-- <small><span class="black_txt"> Watch & Learn!</span></small> -->
                     </a>  </ul>
                 <form class="navbar-form navbar-right hidden">

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-framework="angular.js">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,259 +10,260 @@
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
     <title>VideoCoder - Watch and Learn</title>
-      <script type="text/javascript" src="../js/angular.js"></script>
-      <script type="text/javascript" src="../js/vendor/jquery.leanModal.min.js"></script>
-      <link type="text/css" rel="stylesheet" href="../css/qtip/jquery.qtip.css" />
-      <link rel="stylesheet" type="text/css" href="../css/bootswatch/bootswatch-superhero.css">
-      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
-      <link type="text/css" rel="stylesheet" href="../css/login.css" />
-      <!--<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"> -->
-      <link rel="stylesheet" type="text/css" href="../css/myCss.css">
-      <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
-      <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <script src="../js/bootstrap.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../js/angular.js"></script>
+    <script type="text/javascript" src="../js/vendor/jquery.leanModal.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/qtip/jquery.qtip.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootswatch/bootswatch-superhero.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="../css/login.css" />
+    <!--<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/myCss.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
     <![endif]-->
-      <script src="https://app.userapp.io/js/userapp.client.js"></script>
-      <script src="https://app.userapp.io/js/angularjs.userapp.js"></script>
-      <script type="text/javascript" src="../js/UserApp.js"></script>
-      <link rel="stylesheet" type="text/css" href="../css/dropdown_no_collapse.css">
-  </head>
+    <script src="https://app.userapp.io/js/userapp.client.js"></script>
+    <script src="https://app.userapp.io/js/angularjs.userapp.js"></script>
+    <script type="text/javascript" src="../js/UserApp.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/dropdown_no_collapse.css">
+</head>
 
-  <body>
+<body>
 
-  <div id="main" ng-app>
+<div id="main" ng-app>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-        </div>  <!-- close of navbar-header -->
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-left navbar-brand navbar-text">
-            <!--<li><a href="dashboard.html">Home</a></li>  -->
-            <li><div id="usersnav" class="btn-group">
-                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                      Channels <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu no-collapse" role="menu">
-                      <ul class="nav" class="{{active}}" ng-click="$event.preventDefault()">
-                          <li><a href="#thenewboston" ng-click="active='Ruby on Rails tutorial'" class="ruby">Ruby on Rails</a></li>
-                          <li><a href="#node" ng-click="active='node.js introduction'" class="node">Node.js</a></li>
-                          <li><a href="#mybringback" ng-click="active='Android introduction tutorial'" class="android">Android</a></li>
-                          <li><a href="#angular" ng-click="active='angular.js introduction tutorial'" class="angular">Angular.js</a></li>
-                          <li><a href="#ember" ng-click="active='ember.js introduction tutorial'" class="ember">Ember.js</a></li>
-                          <li><a href="#ios" ng-click="active='ios beginner tutorial'" class="ios">iOS</a></li>
-                          <li><a href="#asp" ng-click="active='asp.net tutorial for beginners'" class="asp">ASP.NET</a></li>
-                          <li class="divider">
-                          <li style="margin-left: 10px;">Completely Newbie?</li>
-                          <li><a href="#edzjohnson" ng-click="active='html tutorial'" class="HTML">HTML</a></li>
-                          <li><a href="#tutor4u" ng-click="active='css tutorial'" class="CSS">CSS</a></li>
-                          <li><a href="#ScoobyDooobyD00" ng-click="active='javaScript tutorial'" class="JavaScript">JavaScript</a></li>
-                      </ul>
-                  </ul>
-                </div>
-             <li>
-              <li><a href="../index.php">Home</a></li>
-              <li><a id="modal_trigger" href="#modal" class="btn">Login or Register</a></li>
-              <li><a href="../beginners.php">Beginners</a></li>
-              <!--<li><a href="search.html">YouTube Search</a></li>-->
-              <li id="stackoverflow"><a href="http://stackoverflow.com">Stuck?</a> </li>
-              <li id="fiddlerjs"><a href="../fiddler.php">Practice?</a></li>
-          </ul>
-            <ul class="pull-right">
-                <a class="navbar-brand nav navbar-text title_font" href="../index.php"><span class="black_txt">$("VideoCoder")<p><small id="reallySmall">Watch & Learn!</small></p></span>
-               <!-- <small><span class="black_txt"> Watch & Learn!</span></small> -->
-            </a>  </ul>
-          <form class="navbar-form navbar-right hidden">
-              <input type="text" value="{{active}}" class='search_input' />
-          </form>
-        </div>  <!-- close of navbar-collapse collapse -->
-      </div>   <!-- close of container-fluid -->
+            </div>  <!-- close of navbar-header -->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left navbar-text">
+                    <!--<li><a href="dashboard.html">Home</a></li>  -->
+                    <li><div id="usersnav" class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Channels <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu no-collapse" role="menu">
+                            <ul class="nav" class="{{active}}" ng-click="$event.preventDefault()">
+                                <li><a href="#thenewboston" ng-click="active='Ruby on Rails tutorial'" class="ruby">Ruby on Rails</a></li>
+                                <li><a href="#node" ng-click="active='node.js introduction'" class="node">Node.js</a></li>
+                                <li><a href="#mybringback" ng-click="active='Android introduction tutorial'" class="android">Android</a></li>
+                                <li><a href="#angular" ng-click="active='angular.js introduction tutorial'" class="angular">Angular.js</a></li>
+                                <li><a href="#ember" ng-click="active='ember.js introduction tutorial'" class="ember">Ember.js</a></li>
+                                <li><a href="#ios" ng-click="active='ios beginner tutorial'" class="ios">iOS</a></li>
+                                <li><a href="#asp" ng-click="active='asp.net tutorial for beginners'" class="asp">ASP.NET</a></li>
+                                <!--<li class="divider">
+                                <li style="margin-left: 10px;">Completely Newbie?</li>-->
+                                <li><a href="#edzjohnson" ng-click="active='html tutorial'" class="HTML">HTML</a></li>
+                                <li><a href="#tutor4u" ng-click="active='css tutorial'" class="CSS">CSS</a></li>
+                                <li><a href="#ScoobyDooobyD00" ng-click="active='javaScript tutorial'" class="JavaScript">JavaScript</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <li>
+                    <!--<li><a href="../index.php">Home</a></li>-->
+                    <li><a href="../beginners.php">Beginners</a></li>
+                    <!--<li><a href="search.html">YouTube Search</a></li>-->
+                    <li id="fiddlerjs"><a href="../fiddler.php">Practice</a></li>
+                    <li id="stackoverflow"><a href="http://stackoverflow.com">Stuck?</a> </li>
+                    <li><a id="modal_trigger" href="#modal" class="">Login or Register</a></li>
+
+                </ul>
+                <ul class="pull-right">
+                    <a class="navbar-brand nav navbar-text title_font" href="../index.php">
+                        <span class="black_txt">$("VideoCoder")<p><small id="reallySmall">Watch & Learn!</small></p></span>
+                        <!-- <small><span class="black_txt"> Watch & Learn!</span></small> -->
+                    </a>  </ul>
+                <form class="navbar-form navbar-right hidden">
+                    <input type="text" value="{{active}}" class='search_input' />
+                </form>
+            </div>  <!-- close of navbar-collapse collapse -->
+        </div>   <!-- close of container-fluid -->
     </div> <!-- close of navbar navbar-inverse navbar-fixed-top -->
 
     <div class="container-fluid">
-      <div class="row top70">
-          <div class="col-md-2 sidebar"></div>
+        <div class="row top70">
+            <div class="col-md-2 sidebar"></div>
 
-              <div class="col-md-6 main">
+            <div class="col-md-6 main">
 
-                      <h1 class="page-header">Welcome to $("VideoCoder")</h1>
-                      <h2 class="sub-header">Watch and Learn!</h2>
+                <h1 class="page-header">Welcome to $("VideoCoder")</h1>
+                <h2 class="sub-header">Watch and Learn!</h2>
 
-                  <div ng-hide="active">
-          </div> <!-- close of ng-hide="active" -->
+                <div ng-hide="active">
+                </div> <!-- close of ng-hide="active" -->
 
-                          <div class="row col-md-12">
-                             <img src="../images/web-code.jpg" class="img-responsive" alt="Responsive image" ng-hide="active">
-                             <p class="top70 col-md-6" ng-hide="active">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat
-                             vitae nibh ac congue. Cras in augue sed nulla faucibus scelerisque id vitae erat. Sed dignissim urna
-                             eget commodo lobortis. Morbi sodales tincidunt massa. Etiam pretium, urna egestas iaculis tincidunt,
-                             urna nulla dignissim tortor.</p>
-                             <p class="top70 col-md-6" ng-hide="active">
-                             Sed id blandit neque, luctus interdum est. Vestibulum a purus lacinia nisl vehicula blandit.
-                             Donec pharetra posuere diam vel feugiat. Sed sagittis convallis nulla eget mollis.
-                             Suspendisse posuere orci non arcu viverra, in aliquet purus auctor.
-                             onec porttitor nunc arcu, eget tempor quam viverra laoreet. Sed id blandit diam.</p>
-                           </div>
+                <div class="row col-md-12">
+                    <img src="../images/web-code.jpg" class="img-responsive" alt="Responsive image" ng-hide="active">
+                    <p class="top70 col-md-6" ng-hide="active">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat
+                        vitae nibh ac congue. Cras in augue sed nulla faucibus scelerisque id vitae erat. Sed dignissim urna
+                        eget commodo lobortis. Morbi sodales tincidunt massa. Etiam pretium, urna egestas iaculis tincidunt,
+                        urna nulla dignissim tortor.</p>
+                    <p class="top70 col-md-6" ng-hide="active">
+                        Sed id blandit neque, luctus interdum est. Vestibulum a purus lacinia nisl vehicula blandit.
+                        Donec pharetra posuere diam vel feugiat. Sed sagittis convallis nulla eget mollis.
+                        Suspendisse posuere orci non arcu viverra, in aliquet purus auctor.
+                        onec porttitor nunc arcu, eget tempor quam viverra laoreet. Sed id blandit diam.</p>
+                </div>
 
-                      <h3 ng-show="active">You are watching <b>{{active}}</b>!</h3>
+                <h3 ng-show="active">You are watching <b>{{active}}</b>!</h3>
 
-                      <div class="table-responsive">
-                                <div id="videos">
-                                  <!-- vids go here -->
-                                </div>
-                      </div>  <!-- close of table-responsive -->
-              </div>  <!-- close of col-md-6 main -->
+                <div class="table-responsive responsive_no_border">
+                    <div id="videos">
+                        <!-- vids go here -->
+                    </div>
+                </div>  <!-- close of table-responsive -->
+            </div>  <!-- close of col-md-6 main -->
 
-          <!-- below is the 1 2 3 that hides on click-->
-          <div class="col-md-4" ng-hide="active">
-              <div class="row row-fluid top70">
-                      <div class="col-md-4">
-                          <img src="../images/number1.png" class="img-responsive" alt="Responsive image" ng-hide="active">
-                      </div>
-                      <div class="col-md-8 bottom">
-                          <p class=" steps_font">Try out the Channels! <br>
-                          Here you can stream the best<br>
-                          Check out the most viewed!<br>
-                           Watch and Learn!
-                          </p>
-                      </div>
-                  </div>
-          </div>
-
-          <div class="col-md-4" ng-hide="active">
-              <div class="row row-fluid top70">
-                  <div class="col-md-4">
-                      <img src="../images/number2.png" class="img-responsive" alt="Responsive image" ng-hide="active">
-                  </div>
-                  <div class="col-md-8 bottom">
-                      <p class=" steps_font ">A Ready Beginner? <br>
-                          Checkout the Beginner Page<br>
-                          The best Beginner Channels!<br>
-                          Watch and Learn!
-                      </p>
-                  </div>
-              </div>
-          </div>
-
-          <div class="col-md-4" ng-hide="active">
-              <div class="row row-fluid top70">
-                  <div class="col-md-4">
-                      <img src="../images/number3.png" class="img-responsive" alt="Responsive image" ng-hide="active">
-                  </div>
-                  <div class="col-md-8 bottom">
-                      <p class=" steps_font">Feeling Ready? <br>
-                          Check out the Practice page<br>
-                          Try out your skills<br>
-                          Watch and Learn!
-                      </p>
-                  </div>
+            <!-- below is the 1 2 3 that hides on click-->
+            <div class="col-md-4" ng-hide="active">
+                <div class="row row-fluid top70">
+                    <div class="col-md-4">
+                        <img src="../images/number1.png" class="img-responsive" alt="Responsive image" ng-hide="active">
+                    </div>
+                    <div class="col-md-8 bottom">
+                        <p class=" steps_font">Try out the Channels! <br>
+                            Here you can stream the best<br>
+                            Check out the most viewed!<br>
+                            Watch and Learn!
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
 
-          <div class="col-md-4">
-              <div id="Chart" style="height: 500px; width: 100%;"></div>
-          </div>  <!-- close of col-md-2 main  -->
+            <div class="col-md-4" ng-hide="active">
+                <div class="row row-fluid top70">
+                    <div class="col-md-4">
+                        <img src="../images/number2.png" class="img-responsive" alt="Responsive image" ng-hide="active">
+                    </div>
+                    <div class="col-md-8 bottom">
+                        <p class=" steps_font ">A Ready Beginner? <br>
+                            Checkout the Beginner Page<br>
+                            The best Beginner Channels!<br>
+                            Watch and Learn!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" ng-hide="active">
+                <div class="row row-fluid top70">
+                    <div class="col-md-4">
+                        <img src="../images/number3.png" class="img-responsive" alt="Responsive image" ng-hide="active">
+                    </div>
+                    <div class="col-md-8 bottom">
+                        <p class=" steps_font">Feeling Ready? <br>
+                            Check out the Practice page<br>
+                            Try out your skills<br>
+                            Watch and Learn!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div id="Chart" style="height: 500px; width: 100%;"></div>
+            </div>  <!-- close of col-md-2 main  -->
 
         </div> <!-- close of row -->
-      </div> <!-- close of container-fluid -->
-  </div> <!-- close of main-->
+    </div> <!-- close of container-fluid -->
+</div> <!-- close of main-->
 
 
-    <!-- **************************************************-->
-     <!-- below is the login modal instead of separate login page-->
-  <div id="modal" class="popupContainer" style="display:none;">
-      <header class="popupHeader">
-          <span class="header_title login_font">Login</span>
-          <span class="modal_close"><i class="fa fa-times"></i></span>
-      </header>
+<!-- **************************************************-->
+<!-- below is the login modal instead of separate login page-->
+<div id="modal" class="popupContainer" style="display:none;">
+    <header class="popupHeader">
+        <span class="header_title login_font">Login</span>
+        <span class="modal_close"><i class="fa fa-times"></i></span>
+    </header>
 
-      <section class="popupBody">
-          <!-- Social Login -->
-          <div class="social_login">
-              <!--<div class="">
-                  <a href="#" class="social_box fb">
-                      <span class="icon"><i class="fa fa-facebook"></i></span>
-                      <span class="icon_title">Connect with Facebook</span>
-                  </a>
-                  <a href="#" class="social_box google">
-                      <span class="icon"><i class="fa fa-google-plus"></i></span>
-                      <span class="icon_title">Connect with Google</span>
-                  </a>
-              </div>
+    <section class="popupBody">
+        <!-- Social Login -->
+        <div class="social_login">
+            <!--<div class="">
+                <a href="#" class="social_box fb">
+                    <span class="icon"><i class="fa fa-facebook"></i></span>
+                    <span class="icon_title">Connect with Facebook</span>
+                </a>
+                <a href="#" class="social_box google">
+                    <span class="icon"><i class="fa fa-google-plus"></i></span>
+                    <span class="icon_title">Connect with Google</span>
+                </a>
+            </div>
 
-              <div class="centeredText">
-                  <span>Or use your Email address</span>
-              </div>-->
+            <div class="centeredText">
+                <span>Or use your Email address</span>
+            </div>-->
 
-              <div class="action_btns">
-                  <div class="one_half"><a href="#" id="login_form" class="btn login_font">Login</a></div>
-                  <div class="one_half last"><a href="#" id="register_form" class="btn login_font">Sign up</a></div>
-              </div>
-          </div>
-
-
-
-          <!-- Register Form -->
-          <div class="user_register login_font">
-              <form class="form" onsubmit="return signup()">
-                  <h2 class="form-heading">Sign up for VideoCoder</h2>
-                  <div class="form-fields">
-                      <input id="name" type="text" class="form-control" placeholder="Name">
-                      <input id="email" type="text" class="form-control" placeholder="Email address" required>
-                      <input id="signup_password" type="password" class="form-control" placeholder="Password" required>
-                  </div>
-                  <button class="btn btn-lg btn-primary btn-block" type="submit">Show me the videos!</button>
-
-                  <p class="text-center" style="margin-top:10px;">
-                      or <a href="login.html">log in</a>
-                  </p>
-              </form>
-          </div>
-      </section>
-  </div>
-  </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-
-  <!-- Link for Chart.js  -->
+            <div class="action_btns">
+                <div class="one_half"><a href="#" id="login_form" class="btn login_font">Login</a></div>
+                <div class="one_half last"><a href="#" id="register_form" class="btn login_font">Sign up</a></div>
+            </div>
+        </div>
 
 
-  <script type="text/javascript" src="../js/searchAPI_nav.js"></script>
-  <script type="text/javascript" src="../js/source/canvasjs.js"></script>
-  <script type="text/javascript" src="../js/source/excanvas.js"></script>
-  <script type="text/javascript" src="../js/canvas.js"></script>
 
-  <!--<script type="text/javascript" src="../js/vid_embed.js"></script>-->
-  <script type="text/javascript" src="../js/bootstrap-modal.js"></script>
-  <script type="text/javascript" src="../js/Chart.js"></script>
-  <script type="text/javascript" src="../js/myCharts.js"></script>
-  <script type="text/javascript" src="../js/login.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
-  <!-- Include the Sidr JS -->
-  <script src="../js/jquery.sidr.min.js"></script>
-  <!-- script for sidr -->
-  <script src="../js/youtubeAPI.js"></script>
-  <!-- qtip links -->
-  <script src="../js/custom.js" type="text/javascript"></script>
+        <!-- Register Form -->
+        <div class="user_register login_font">
+            <form class="form" onsubmit="return signup()">
+                <h2 class="form-heading">Sign up for VideoCoder</h2>
+                <div class="form-fields">
+                    <input id="name" type="text" class="form-control" placeholder="Name">
+                    <input id="email" type="text" class="form-control" placeholder="Email address" required>
+                    <input id="signup_password" type="password" class="form-control" placeholder="Password" required>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Show me the videos!</button>
 
-  <!-- Include either the minifed or production version, NOT both!! -->
-  <script type="text/javascript" src="../js/qtip/jquery.qtip.js"></script>
+                <p class="text-center" style="margin-top:10px;">
+                    or <a href="login.html">log in</a>
+                </p>
+            </form>
+        </div>
+    </section>
+</div>
+</div>
 
-  <!-- Optional: imagesLoaded script to better support images inside your tooltips -->
-  <script type="text/javascript" src="../js/qtip/imagesloaded.pkg.min.js"></script>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<!-- Link for Chart.js  -->
 
 
-  </body>
+<script type="text/javascript" src="../js/searchAPI_nav.js"></script>
+<script type="text/javascript" src="../js/source/canvasjs.js"></script>
+<script type="text/javascript" src="../js/source/excanvas.js"></script>
+<script type="text/javascript" src="../js/canvas.js"></script>
+
+<!--<script type="text/javascript" src="../js/vid_embed.js"></script>-->
+<script type="text/javascript" src="../js/bootstrap-modal.js"></script>
+<script type="text/javascript" src="../js/Chart.js"></script>
+<script type="text/javascript" src="../js/myCharts.js"></script>
+<script type="text/javascript" src="../js/login.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<!-- Include the Sidr JS -->
+<script src="../js/jquery.sidr.min.js"></script>
+<!-- script for sidr -->
+<script src="../js/youtubeAPI.js"></script>
+<!-- qtip links -->
+<script src="../js/custom.js" type="text/javascript"></script>
+
+<!-- Include either the minifed or production version, NOT both!! -->
+<script type="text/javascript" src="../js/qtip/jquery.qtip.js"></script>
+
+<!-- Optional: imagesLoaded script to better support images inside your tooltips -->
+<script type="text/javascript" src="../js/qtip/imagesloaded.pkg.min.js"></script>
+
+
+</body>
 </html>

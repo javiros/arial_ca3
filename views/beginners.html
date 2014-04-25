@@ -9,20 +9,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
-
-    <title>VideoCoder</title>
+    <title>VideoCoder - Watch and Learn</title>
+    <script type="text/javascript" src="../js/angular.js"></script>
     <script type="text/javascript" src="../js/vendor/jquery.leanModal.min.js"></script>
     <link type="text/css" rel="stylesheet" href="../css/qtip/jquery.qtip.css" />
-    <!--<link rel="stylesheet" type="text/css" href="../css/bootswatch/bootswatch-yeti.css"> -->
     <link rel="stylesheet" type="text/css" href="../css/bootswatch/bootswatch-superhero.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
     <link type="text/css" rel="stylesheet" href="../css/login.css" />
     <!--<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"> -->
-    <!-- Custom Css file -->
     <link rel="stylesheet" type="text/css" href="../css/myCss.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
-    <!-- Include Sidr bundled CSS theme -->
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -30,12 +26,15 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <script src="../js/bootstrap.js" type="text/javascript"></script>
     <![endif]-->
+    <script src="https://app.userapp.io/js/userapp.client.js"></script>
+    <script src="https://app.userapp.io/js/angularjs.userapp.js"></script>
+    <script type="text/javascript" src="../js/UserApp.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/dropdown_no_collapse.css">
 </head>
 
 <body>
 
-<div id=main ng-app>
+<div id="main" ng-app>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -48,11 +47,10 @@
 
             </div>  <!-- close of navbar-header -->
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-left navbar-brand navbar-text">
+                <ul class="nav navbar-nav navbar-left navbar-text">
                     <!--<li><a href="dashboard.html">Home</a></li>  -->
                     <li><div id="usersnav" class="btn-group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                            Beginners Channels <span class="caret"></span>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Beginners<span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu no-collapse" role="menu" id="navSelector">
                             <ul class="nav sidebar" class="{{active}}" ng-click="$event.preventDefault()">
@@ -73,14 +71,16 @@
                     </div>
                     <li>
                     <li><a href="../index.php">Home</a></li>
-                    <li><a id="modal_trigger" href="#modal" class="btn">Login or Register</a></li>
-                    <li><a href="../beginners.php">Beginners</a></li>
+                    <!--<li><a href="../beginners.php">Beginners</a></li>-->
                     <!--<li><a href="search.html">YouTube Search</a></li>-->
+                    <li id="fiddlerjs"><a href="../fiddler.php">Practice</a></li>
                     <li id="stackoverflow"><a href="http://stackoverflow.com">Stuck?</a> </li>
-                    <li id="fiddlerjs"><a href="../fiddler.php">Practice?</a></li>
+                    <li><a id="modal_trigger" href="#modal" class="">Login or Register</a></li>
+
                 </ul>
                 <ul class="pull-right">
-                    <a class="navbar-brand nav navbar-text title_font" href="dashboard.html"><span class="black_txt">$("VideoCoder")<p><small id="reallySmall">Watch & Learn!</small></p></span>
+                    <a class="navbar-brand nav navbar-text title_font" href="../index.php">
+                        <span class="black_txt">$("VideoCoder")<p><small id="reallySmall">Watch & Learn!</small></p></span>
                         <!-- <small><span class="black_txt"> Watch & Learn!</span></small> -->
                     </a>  </ul>
                 <form class="navbar-form navbar-right hidden">

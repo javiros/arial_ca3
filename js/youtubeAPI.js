@@ -57,8 +57,8 @@ window.vidTitle = [];
                     },
                         legend: {
                             fontColor: "#fff",
-                            fontFamily: "Helvetica",
-                            fontSize: 15
+                            fontFamily: "Lato, sans-serif, Helvetica, Helvetica Neue, Arial",
+                            fontSize: 14
                         },
                         label: {
                             fontColor: "#fff"
