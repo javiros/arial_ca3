@@ -72,3 +72,6 @@ body {
     padding-bottom: 10px;
 }
 
+#result {
+    display: none;
+}

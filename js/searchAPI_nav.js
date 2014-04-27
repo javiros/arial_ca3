@@ -68,14 +68,18 @@ var sidebar_links = function(){
                 var feedURL = item.link[1].href;
                 var fragments = feedURL.split("/");
                 var videoID = fragments[fragments.length - 2];
-                var url = videoURL + videoID;
+                window.url = videoURL + videoID;
                 var thumb = "http://img.youtube.com/vi/"+ videoID +"/default.jpg";
-                list_data += '<li class="top-heading"><p>'+feedTitle+'</p><iframe width="250px" height="100%" src="'+ url +'" title="'+ feedTitle +'"><img alt="'+ feedTitle+'" src="'+ thumb +'" /></iframe></li>';
+                list_data += '<li class="top-heading"><p>'+feedTitle+'</p><iframe id="sideThumb" width="250px" height="100%" src="'+ url +'" title="'+ feedTitle +'"><img alt="'+ feedTitle+'" src="'+ thumb +'" /></iframe></li>';
+
             });
             $('.cont').html(list_data);
+
         });
     });
 };
+
+
 
 var displayMainVideo = function(){
 $(".search_input_nav").change();
@@ -112,6 +116,7 @@ $(".nav").click(function()
 });
 
 };
+
 
 $(document).ready(function()
 {
