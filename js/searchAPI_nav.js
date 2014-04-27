@@ -1,8 +1,22 @@
 /* ** Created by sanjeev on 10/04/2014.*/
 
+var VideoData = (function() {
+
+    return {
+        searchForVideo: function(search_value) {
+            var word = (search_value);
+            if ( word.length <  1) {
+                throw new Error ("No search value entered");
+
+            }
+        }
+    }
+}());
+
+
 var displayThumbanailVideo = function(){
     $(".search_input_sidebar").change();
-    $(".cont a").click(function()
+    $(".cont li iframe").click(function()
     {
         var search_input_nav = $(".search_input_nav").val();
         var keyword= encodeURIComponent(search_input_nav);
@@ -23,12 +37,14 @@ var displayThumbanailVideo = function(){
                         var video_frame="<iframe width='100%' height='400px' src='http://www.youtube.com/embed/"+video_id+"' frameborder='0' type='text/html'></iframe>";
                         var final="<div id='title'>"+video_title+"</div><div>"+video_frame+"</div><div id='count'>"+video_viewCount+" Views</div>";
                         $("#result").html(final);
+
                     });
 
                 }
                 else
                 {
                     $("#result").html("<div id='no'>No Video</div>");
+
                 }
             }
         });
@@ -99,6 +115,7 @@ $(".nav").click(function()
 
 $(document).ready(function()
 {
+
     sidebar_links();
     displayThumbanailVideo();
     displayMainVideo();

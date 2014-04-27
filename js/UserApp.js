@@ -4,6 +4,7 @@
 
 UserApp.initialize({ appId: "5349161769376" });
 
+
 function signup() {
     UserApp.User.save({
         login: document.getElementById("email").value,
@@ -36,6 +37,7 @@ function login() {
                     alert("Error: " + error.message);
                 } else {
                     alert("Welcome back, " + user[0].first_name + "!");
+                    $("#login_fadeout").hide();
                 }
             });
         }
@@ -43,3 +45,4 @@ function login() {
 
     return false;
 }
+
