@@ -33,10 +33,7 @@ window.vidTitle = [];
                         '<p>Total comments: <strong>'+ numcomms +'</strong></p>' +
                         '<p><a href="'+ ytlink +'" class="external" target="_blank">View on YouTube</a></p>' +
                         '<p><a href="'+ vlink +'" class="external" target="_blank">View in Fullscreen</a></p>';
-                    // hiding the alt thumbnails
-                    //+
-                    //'<p><strong>Alternate Thumbnails</strong>:<br><img src="'+ tinyimg1 +'"> ' +
-                    //'<img src="' + tinyimg2 + '"> <img src="'+ tinyimg3 +'"></p></div></li>';
+
                     video.push(numviews);
                     vidTitle.push(title);
                 }); // end each loop

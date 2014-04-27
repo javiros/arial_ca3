@@ -44,31 +44,31 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-
             </div>  <!-- close of navbar-header -->
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-left navbar-text">
                     <!--<li><a href="dashboard.html">Home</a></li>  -->
-                    <li><div id="usersnav" class="btn-group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Beginners<span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu no-collapse" role="menu" id="navSelector">
-                            <ul class="nav sidebar" class="{{active}}" ng-click="$event.preventDefault()">
-                                <li><a href="#ruby" ng-click="active='6gx4Cwl9DGDiJSXfsJTASx9eMq_HlenQ'" class="ruby">Ajax</a></li>
-                                <li><a href="#php" ng-click="active='442FA2C127377F07'" class="asp">PHP</a></li>
-                                <li><a href="#mybringback" ng-click="active='GLfVvz_LVvQUjiCc8lUT9aO0GsWA4uNe'" class="android">Android</a></li>
-                                <li><a href="#ios" ng-click="active='4E61E23CD4B49974'" class="ios">iOS</a></li>
-                                <li><a href="#angular" ng-click="active='GLfVvz_LVvQHO1PfyscjIPkNJjgHsLyH'" class="angular">GIT</a></li>
-                                <li><a href="#ember" ng-click="active='3877C5434C042349'" class="ember">JQuery</a></li>
-                                <li><a href="#node" ng-click="active='GLfVvz_LVvReUrWr94U-ZMgjYTQ538nT'" class="node">Java</a></li>
-                                <li class="divider">
-                                <li style="margin-left: 10px;">A Trully Newbie?</li>
-                                <li><a href="#edzjohnson" ng-click="active='2C3A4D7B390C0BBE'" class="HTML">HTML</a></li>
-                                <li><a href="#tutor4u" ng-click="active='07454EA7FF8D28AB'" class="CSS">CSS</a></li>
-                                <li><a href="#ScoobyDooobyD00" ng-click="active='BA965A22D89CF13B'" class="JavaScript">JavaScript</a></li>
+                    <li>
+                        <div id="usersnav" class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Beginners<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu no-collapse" role="menu" id="navSelector">
+                                <ul class="nav sidebar" class="{{active}}" ng-click="$event.preventDefault()">
+                                    <li><a href="#ruby" ng-click="active='6gx4Cwl9DGDiJSXfsJTASx9eMq_HlenQ'" class="ruby">Ajax</a></li>
+                                    <li><a href="#php" ng-click="active='442FA2C127377F07'" class="asp">PHP</a></li>
+                                    <li><a href="#mybringback" ng-click="active='GLfVvz_LVvQUjiCc8lUT9aO0GsWA4uNe'" class="android">Android</a></li>
+                                    <li><a href="#ios" ng-click="active='4E61E23CD4B49974'" class="ios">iOS</a></li>
+                                    <li><a href="#angular" ng-click="active='GLfVvz_LVvQHO1PfyscjIPkNJjgHsLyH'" class="angular">GIT</a></li>
+                                    <li><a href="#ember" ng-click="active='3877C5434C042349'" class="ember">JQuery</a></li>
+                                    <li><a href="#node" ng-click="active='GLfVvz_LVvReUrWr94U-ZMgjYTQ538nT'" class="node">Java</a></li>
+                                    <li class="divider">
+                                    <li style="margin-left: 10px;">A Trully Newbie?</li>
+                                    <li><a href="#edzjohnson" ng-click="active='2C3A4D7B390C0BBE'" class="HTML">HTML</a></li>
+                                    <li><a href="#tutor4u" ng-click="active='07454EA7FF8D28AB'" class="CSS">CSS</a></li>
+                                    <li><a href="#ScoobyDooobyD00" ng-click="active='BA965A22D89CF13B'" class="JavaScript">JavaScript</a></li>
+                                </ul>
                             </ul>
-                        </ul>
-                    </div>
+                         </div>
                     <li>
                     <li><a href="../index.php">Home</a></li>
                     <!--<li><a href="../beginners.php">Beginners</a></li>-->
@@ -94,8 +94,6 @@
         <div class="row top70" >
 
             <div class="col-md-1 sidebar"></div>
-
-
             <div class="col-md-7 main">
 
                 <h1 class="page-header">Beginners</h1>
@@ -110,28 +108,20 @@
 
             </div>
             <row>
-            <div class="col-md-3">
-               <div id="sidebarTitle">
-                    <h4 ng-show="active">You are watching <b><span id="channelName"></span></b></h4>
-               </div>
-                 <!-- close of col-md-1 sidebar -->
+                <div class="col-md-3">
+                   <div id="sidebarTitle">
+                        <h4 ng-show="active">You are watching <b><span id="channelName"></span></b></h4>
+                   </div>
+                     <!-- close of col-md-1 sidebar -->
+                    <form class="">
 
-                <form class="">
-
-                    <input type="text" class='search_input_sidebar hidden' value="{{active}}"/>
-                </form>
-               <ul class="cont" >
-                   <li class="top-heading"></li>
-                </ul>
-
-                </row>
-                <row>
-
-
-                <!-- below is the all in search-->
-                </row>
-             </div>  <!-- close of col-md-3 main -->
-
+                        <input type="text" class='search_input_sidebar hidden' value="{{active}}"/>
+                    </form>
+                   <ul class="cont" >
+                       <li class="top-heading"></li>
+                    </ul>
+                </div>  <!-- close of col-md-3 main -->
+            </row>
 
         </div> <!-- close of row -->
     </div> <!-- close of container-fluid -->
@@ -148,29 +138,11 @@
     <section class="popupBody">
         <!-- Social Login -->
         <div class="social_login">
-            <!--<div class="">
-                <a href="#" class="social_box fb">
-                    <span class="icon"><i class="fa fa-facebook"></i></span>
-                    <span class="icon_title">Connect with Facebook</span>
-                </a>
-                <a href="#" class="social_box google">
-                    <span class="icon"><i class="fa fa-google-plus"></i></span>
-                    <span class="icon_title">Connect with Google</span>
-                </a>
-            </div>
-
-            <div class="centeredText">
-                <span>Or use your Email address</span>
-            </div>-->
-
             <div class="action_btns">
                 <div class="one_half"><a href="#" id="login_form" class="btn login_font">Login</a></div>
                 <div class="one_half last"><a href="#" id="register_form" class="btn login_font">Sign up</a></div>
             </div>
         </div>
-
-
-
         <!-- Register Form -->
         <div class="user_register login_font">
             <form class="form" onsubmit="return signup()">
@@ -196,32 +168,25 @@
 <!-- Placed at the end of the document so the pages load faster -->
 
 <!-- Link for Chart.js  -->
-
 <script type="text/javascript" src="../js/angular.js"></script>
 <script type="text/javascript" src="../js/searchAPI.js"></script>
 <script type="text/javascript" src="../js/searchAPI_nav.js"></script>
 <script type="text/javascript" src="../js/source/canvasjs.js"></script>
 <script type="text/javascript" src="../js/canvas.js"></script>
-<!--<script type="text/javascript" src="../js/vid_embed.js"></script>-->
 <script type="text/javascript" src="../js/bootstrap-modal.js"></script>
 <script type="text/javascript" src="../js/Chart.js"></script>
-<script type="text/javascript" src="../js/myCharts.js"></script>
 <script type="text/javascript" src="../js/login.js"></script>
-
 <script src="../js/bootstrap.min.js"></script>
 <!-- Include the Sidr JS -->
 <script src="../js/jquery.sidr.min.js"></script>
 <!-- script for sidr -->
 <script src="../js/youtubeAPI.js"></script>
 <!-- qtip links -->
-
 <!-- Include either the minifed or production version, NOT both!! -->
 <script type="text/javascript" src="../js/qtip/jquery.qtip.js"></script>
-
 <!-- Optional: imagesLoaded script to better support images inside your tooltips -->
 <script type="text/javascript" src="../js/qtip/imagesloaded.pkg.min.js"></script>
 <script type="text/javascript" src="../js/linkSelector.js"></script>
-
 <script src="../js/custom.js" type="text/javascript"></script>
 </body>
 </html>
