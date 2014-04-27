@@ -27,7 +27,7 @@ window.vidTitle = [];
                     var numcomms = item['gd$comments']['gd$feedLink']['countHint'];
 
                     htmlString +='<li class="clearfix"><h2>' + title + '</h2>';
-                    // code for embeded iframe!
+                    // code for embedded iframe!
                     htmlString +='<div class="video-container col-md-9"><iframe src="' + vlink + '" target="_blank" width="480" height="360"></iframe></div>';
                     htmlString +='<div class="meta col-md-3"><p>Published on <strong>' + fulldate + '</strong></p><p>Total views: <strong>' + commafy(numviews) + '</strong></p>' +
                         '<p>Total comments: <strong>'+ numcomms +'</strong></p>' +

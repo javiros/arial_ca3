@@ -38,27 +38,27 @@ var displayThumbanailVideo = function(){
 
 var sidebar_links = function(){
 
-$(".search_input_sidebar").change();
-$(".sidebar").click(function()
-{
-    var search_input_sidebar = $(".search_input_sidebar").val();
-    var sidebarID= encodeURIComponent(search_input_sidebar);
-    var playListURL = 'http://gdata.youtube.com/feeds/api/playlists/'+sidebarID+'?v=2&&max-results=10&alt=json&callback=?';
-    var videoURL= 'http://www.youtube.com/watch?v=';
-    $.getJSON(playListURL, function(data) {
-        var list_data="";
-        $.each(data.feed.entry, function(i, item) {
-            var feedTitle = item.title.$t;
-            var feedURL = item.link[1].href;
-            var fragments = feedURL.split("/");
-            var videoID = fragments[fragments.length - 2];
-            var url = videoURL + videoID;
-            var thumb = "http://img.youtube.com/vi/"+ videoID +"/default.jpg";
-            list_data += '<li class="top-heading"><p>'+feedTitle+'</p>;<a href="'+ url +'" title="'+ feedTitle +'"><img alt="'+ feedTitle+'" src="'+ thumb +'"</a></li>';
+    $(".search_input_sidebar").change();
+    $(".sidebar").click(function()
+    {
+        var search_input_sidebar = $(".search_input_sidebar").val();
+        var sidebarID= encodeURIComponent(search_input_sidebar);
+        var playListURL = 'http://gdata.youtube.com/feeds/api/playlists/'+sidebarID+'?v=2&&max-results=10&alt=json&callback=?';
+        var videoURL= 'http://www.youtube.com/embed/';
+        $.getJSON(playListURL, function(data) {
+            var list_data="";
+            $.each(data.feed.entry, function(i, item) {
+                var feedTitle = item.title.$t;
+                var feedURL = item.link[1].href;
+                var fragments = feedURL.split("/");
+                var videoID = fragments[fragments.length - 2];
+                var url = videoURL + videoID;
+                var thumb = "http://img.youtube.com/vi/"+ videoID +"/default.jpg";
+                list_data += '<li class="top-heading"><p>'+feedTitle+'</p><iframe width="250px" height="100%" src="'+ url +'" title="'+ feedTitle +'"><img alt="'+ feedTitle+'" src="'+ thumb +'" /></iframe></li>';
+            });
+            $('.cont').html(list_data);
         });
-        $('.cont').html(list_data);
     });
-});
 };
 
 var displayMainVideo = function(){

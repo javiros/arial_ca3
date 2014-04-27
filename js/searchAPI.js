@@ -26,41 +26,13 @@ $(document).ready(function()
                         var final="<div id='title'>"+video_title+"</div><div>"+video_frame+"</div><div id='count'>"+video_viewCount+" Views</div>";
                         $("#result").html(final);
                     });
-
-
                 }
                 else
                 {
                     $("#result").html("<div id='no'>No Video</div>");
                 }
             }
-
         });
-
     });
 });
 
-/*   advanced search */
-
-/*function getq(url)
-{
-    return url.substring(url.indexOf('=')+1);
-}
-
-var qurl;
-qurl = location.search;
-
-var q = getq(qurl);
-
-
-if (q)
-{
-    quvic.PresentVideos('search',q,1);
-
-    if(document.title)
-        document.title = ""+decodeURI(q).replace("+"," ")+" :: QUVIC.COM YouTube Video Search";
-
-}
-else{
-    quvic.PresentVideos('top_rated','',1);
-}*/
