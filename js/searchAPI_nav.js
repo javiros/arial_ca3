@@ -81,7 +81,6 @@ var sidebar_links = function(){
                 $("#result")
                     .show()
                     .html(videoIframe);
-
             });
         });
     });
