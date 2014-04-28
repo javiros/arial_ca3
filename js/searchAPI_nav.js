@@ -70,11 +70,18 @@ var sidebar_links = function(){
                 var videoID = fragments[fragments.length - 2];
                 window.url = videoURL + videoID;
                 var thumb = "http://img.youtube.com/vi/"+ videoID +"/default.jpg";
-                list_data += '<li class="top-heading"><p>'+feedTitle+'</p><iframe id="sideThumb" width="250px" height="100%" src="'+ url +'" title="'+ feedTitle +'"><img alt="'+ feedTitle+'" src="'+ thumb +'" /></iframe></li>';
-
+                list_data += '<li class="top-heading" ng-click="$event.preventDefault()"><p>'+feedTitle+'</p><a id="sideThumb" width="250px" height="100%" src="'+ url +'" title="'+ feedTitle +'"><img alt="'+ feedTitle+'" src="'+ thumb +'" /></a></li>';
+                window.videoIframe = '<iframe id="sideThumb" width="100%" height="400px" src="'+ url +'" title="'+ feedTitle +'"><img alt="'+ feedTitle+'" src="'+ thumb +'" /></iframe>'
             });
             $('.cont').html(list_data);
+            //transfers thumbnail to main result container
+            $("#sideThumb").click(function( event ){
 
+                event.preventDefault();
+                $("#result")
+                    .show()
+                    .html(videoIframe);
+            });
         });
     });
 };

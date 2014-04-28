@@ -6,13 +6,3 @@ $(document).ready(function(){
 
     });
  });
-
-//thumbnail display to main body
-
-$("#sideThumb").click(function( event ){
-    console.log(url);
-    event.preventDefault();
-    $("#result")
-        .show()
-        .append.html(url);
-});

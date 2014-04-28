@@ -30,6 +30,8 @@
     <script src="https://app.userapp.io/js/angularjs.userapp.js"></script>
     <script type="text/javascript" src="../js/UserApp.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/dropdown_no_collapse.css">
+
+    <link rel="stylesheet" href="../css/mediaelementplayer.css" />
 </head>
 
 <body>
@@ -74,7 +76,7 @@
                     <!--<li><a href="../beginners.php">Beginners</a></li>-->
                     <!--<li><a href="search.html">YouTube Search</a></li>-->
                     <li id="fiddlerjs" class="hidden-xs"><a href="../fiddler.php">Practice</a></li>
-                    <li id="stackoverflow"><a href="http://stackoverflow.com">Stuck?</a> </li>
+                    <li id="stackoverflow"><a href="../stackOverflow.php">Stuck?</a> </li>
                     <li><a id="modal_trigger" href="#modal" class="">Login or Register</a></li>
 
                 </ul>
@@ -117,8 +119,8 @@
 
                         <input type="text" class='search_input_sidebar hidden' value="{{active}}"/>
                     </form>
-                   <ul class="cont" >
-                       <li class="top-heading"></li>
+                   <ul class="cont">
+                       <li class="top-heading"  ng-click="$event.preventDefault()" ></li>
                     </ul>
                 </div>  <!-- close of col-md-3 main -->
             </row>
@@ -199,5 +201,6 @@
 <script type="text/javascript" src="../js/qtip/imagesloaded.pkg.min.js"></script>
 <script type="text/javascript" src="../js/linkSelector.js"></script>
 <script src="../js/custom.js" type="text/javascript"></script>
+<script src="../js/mediaelement-and-player.min.js"></script>
 </body>
 </html>
