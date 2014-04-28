@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
-
+    <!-- test -->
     <title>VideoCoder - Watch and Learn</title>
     <script type="text/javascript" src="../js/angular.js"></script>
     <script type="text/javascript" src="../js/vendor/jquery.leanModal.min.js"></script>
@@ -119,31 +119,27 @@
     <section class="popupBody">
         <!-- Social Login -->
         <div class="social_login">
-            <!--<div class="">
-                <a href="#" class="social_box fb">
-                    <span class="icon"><i class="fa fa-facebook"></i></span>
-                    <span class="icon_title">Connect with Facebook</span>
-                </a>
-                <a href="#" class="social_box google">
-                    <span class="icon"><i class="fa fa-google-plus"></i></span>
-                    <span class="icon_title">Connect with Google</span>
-                </a>
-            </div>
-
-            <div class="centeredText">
-                <span>Or use your Email address</span>
-            </div>-->
-
             <div class="action_btns">
                 <div class="one_half"><a href="#" id="login_form" class="btn login_font">Login</a></div>
                 <div class="one_half last"><a href="#" id="register_form" class="btn login_font">Sign up</a></div>
             </div>
         </div>
-
-
+        <!-- test -->
+        <!-- Username & Password Login form -->
+        <div class="user_login login_font">
+            <form class="form" id="login_fadout" onsubmit="return login()">
+                <h2 class="form-heading">Log in to UserApp</h2>
+                <div class="form-fields">
+                    <input id="username" type="text" class="form-control" placeholder="Email" required autofocus>
+                    <input id="login_password" type="password" class="form-control" placeholder="Password" required>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+            </form>
+        </div>
 
         <!-- Register Form -->
         <div class="user_register login_font">
+
             <form class="form" onsubmit="return signup()">
                 <h2 class="form-heading">Sign up for VideoCoder</h2>
                 <div class="form-fields">
@@ -153,9 +149,6 @@
                 </div>
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Show me the videos!</button>
 
-                <p class="text-center" style="margin-top:10px;">
-                    or <a href="login.html">log in</a>
-                </p>
             </form>
         </div>
     </section>
