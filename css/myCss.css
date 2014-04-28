@@ -75,3 +75,7 @@ body {
 #result {
     display: none;
 }
+
+.stuckTitle {
+    margin-top: 5%;
+}
