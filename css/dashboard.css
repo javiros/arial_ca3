@@ -139,20 +139,20 @@ body {
     width:640px;
 
 }
-#result
+/*#result
 {
-    background-color: #bababa;
+    /background-color: #bababa;
     margin-top:25px;
     margin-left: 0px;
     /*min-height:100%;
     width:100%;
     border:solid 10px #ffffff;*/
-    min-height: 385px;
+    /*min-height: 385px;
     width: 100%;
     border:solid 10px #ffffff;
     -moz-border-radius:9px;
     -webkit-border-radius:9px;
-}
+}  */
 #no
 {
     padding:30px;

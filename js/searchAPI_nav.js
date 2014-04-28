@@ -71,8 +71,8 @@ var sidebar_links = function(){
                 window.url = videoURL + videoID;
                 var thumb = "http://img.youtube.com/vi/"+ videoID +"/default.jpg";
                 list_data += '<li class="top-heading" ng-click="$event.preventDefault()"><p>'+feedTitle+'</p><a id="sideThumb" width="250px" height="100%" src="'+ url +'" title="'+ feedTitle +'"><img alt="'+ feedTitle+'" src="'+ thumb +'" /></a></li>';
-                window.videoIframe = '<iframe id="sideThumb" width="100%" height="400px" src="'+ url + '?html5=1' +'" title="'+ feedTitle +'"><img alt="'+ feedTitle+'" src="'+ thumb +'" /></iframe>'
-                window.vidVideo = '<video width="640" height="360" controls preload="none"><source src="'+ url + '?html5=1' +'" title="'+ feedTitle +'""  type="video/mpg4" /></video>'
+                window.videoIframe = '<div class="video-container"><iframe id="sideThumb" width="100%" height="400px" src="'+ url + '?html5=1' +'" title="'+ feedTitle +'"><img alt="'+ feedTitle+'" src="'+ thumb +'" /></iframe></div>';
+                window.vidVideo = '<div class="video-container"><video width="640" height="360" controls preload="none"><source src="'+ url + '?html5=1' +'" title="'+ feedTitle +'""  type="video/mpg4" /></video></div>'
             });
             $('.cont').html(list_data);
             //transfers thumbnail to main result container
