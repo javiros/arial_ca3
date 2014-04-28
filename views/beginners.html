@@ -99,7 +99,10 @@
             <div class="col-md-7 main">
 
                 <h1 class="page-header">Beginners</h1>
-                <p>Select a channel from the beginners dropdown at the navigation bar...</p>
+                <h2 class="sub-header">Select a channel from the Beginners dropdown menu.</h2>
+
+                    <img src="../images/Online-Learning_B.jpg" class="img-responsive" alt="Responsive image" ng-hide="active">
+
                 <!-- below is the hidden search field for the beginner vids-->
                 <form class="navbar-form navbar-right hidden">
                     <input type="text" value="{{active}}" class='search_input_nav' />
@@ -111,8 +114,8 @@
             </div>
             <row>
                 <div class="col-md-3">
-                   <div id="sidebarTitle">
-                        <h4 ng-show="active">You are watching <b><span id="channelName"></span></b></h4>
+                   <div id="sidebarTitle" class="sidebar">
+                        <h3 ng-show="active">You are watching <b><span id="channelName"></span></b></h3>
                    </div>
                      <!-- close of col-md-1 sidebar -->
                     <form class="">

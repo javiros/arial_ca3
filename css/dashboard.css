@@ -17,6 +17,9 @@ body {
   border-bottom: 1px solid #eee;
 }
 
+.sidebar{
+    margin-left: 30px;
+}
 
 /*
  * Sidebar

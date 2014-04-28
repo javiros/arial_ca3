@@ -26,9 +26,18 @@ window.vidTitle = [];
                     var numviews = item['yt$statistics']['viewCount'];
                     var numcomms = item['gd$comments']['gd$feedLink']['countHint'];
 
+
+
+
+                   // window.videoIframe = '<div class="video-container"><iframe id="sideThumb" width="100%" height="400px" src="'+ url + '?html5=1' +'" title="'+ feedTitle +'"><img alt="'+ feedTitle+'" src="'+ thumb +'" /></iframe></div>';
+                    //window.vidVideo = '<div class="video-container"><video width="640" height="360" controls preload="none"><source src="'+ url + '?html5=1' +'" title="'+ feedTitle +'""  type="video/mpg4" /></video></div>'
+
+
+
+
                     htmlString +='<li class="clearfix"><h2>' + title + '</h2>';
                     // code for embedded iframe!
-                    htmlString +='<div class="video-container col-md-9"><iframe src="' + vlink + '" target="_blank" width="480" height="360"></iframe></div>';
+                    htmlString +='<div class="video-container col-md-9"><iframe src="' + vlink +  '?html5=1'+ '" target="_blank" width="480" height="360" type="video/mpg4"></iframe></div>';
                     htmlString +='<div class="meta col-md-3"><p>Published on <strong>' + fulldate + '</strong></p><p>Total views: <strong>' + commafy(numviews) + '</strong></p>' +
                         '<p>Total comments: <strong>'+ numcomms +'</strong></p>' +
                         '<p><a href="'+ ytlink +'" class="external" target="_blank">View on YouTube</a></p>' +
