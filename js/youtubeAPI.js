@@ -29,7 +29,8 @@ window.vidTitle = [];
 
                     htmlString +='<li class="clearfix"><h2>' + title + '</h2>';
 
-                    //htmlString += window.vidVideo = '<div class="video-container col-md-9"><video width="640" height="360" controls preload="none"><source src="' + vlink + '?html5=1' +' type="video/mpg4"></video></div>';
+                    //window.videoIframe = '<div class="video-container"><iframe id="sideThumb" width="100%" height="400px" src="'+ url + '?html5=1' +'" title="'+ feedTitle +'"><img alt="'+ feedTitle+'" src="'+ thumb +'" /></iframe></div>';
+                    //htmlString += window.vidVideo = '<div class="video-container col-md-9"><iframe width="640" height="360" src="' + ytlink + '?html5=1' +'"></iframe></div>';
                     htmlString +='<div class="video-container col-md-9"><iframe src="' + vlink + '" target="_blank" width="480" height="360" type="video/mpg4"></iframe></div>';
                     htmlString +='<div class="meta col-md-3"><p>Published on <strong>' + fulldate + '</strong></p><p>Total views: <strong>' + commafy(numviews) + '</strong></p>' +
                         '<p>Total comments: <strong>'+ numcomms +'</strong></p>' +
