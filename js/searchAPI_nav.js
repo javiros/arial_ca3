@@ -75,14 +75,14 @@ var sidebar_links = function(){
                 window.videoIframe = '<div class="video-container"><iframe id="sideThumb" width="100%" height="400px" src="'+ url + '?html5=1' +'" title="'+ feedTitle +'"><img alt="'+ feedTitle+'" src="'+ thumb +'" /></iframe></div>';
 
             });
-            $('.cont').html(list_data);
+            $('.cont').append(list_data);
             //transfers thumbnail to main result container
             $("#sideThumb").click(function( event ){
 
                 event.preventDefault();
                 $("#result")
                     .show()
-                    .html(videoIframe);
+                    .append(videoIframe);
              });
         });
     });
