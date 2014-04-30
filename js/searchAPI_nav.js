@@ -118,7 +118,7 @@ $(".nav").click(function()
             }
             else
             {
-                //$("#result").html("<div id='no'>No Video</div>");
+                $("#result").html("<div id='no'></div>");
             }
         }
     });
